@@ -3,15 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/tags/analytics/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/posts/city-code/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/city-council/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/code/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/planning/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/politics/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windsor/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>
