@@ -20,5 +20,16 @@
       <description>I frequently find myself on the City of Windsor website. I&amp;rsquo;ll scroll through city council meeting agendas and videos, browse the open data catalogue, check for newsroom headlines; annoyed by how outdated it feels the entire time. This isn&amp;rsquo;t about the look of the site either. I don&amp;rsquo;t really care about the asthetics. I&amp;rsquo;m talking about it feeling like the site is intentionally disjointed and built in a way to make engagement a little bit harder.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m a Black software developer based in Windsor, Ontario, and I&amp;rsquo;m excited to share my thoughts and experiences with you.
+As a DevOps/Platform Engineer, I&amp;rsquo;m all about automation and making things run smoothly. I&amp;rsquo;ve worked with a ton of different technologies over the years, but I&amp;rsquo;m especially into Kubernetes and all the cool things you can do with it.
+In my work, I&amp;rsquo;ve tackled a bunch of different challenges, from scaling to security to performance.</description>
+    </item>
+    
   </channel>
 </rss>
