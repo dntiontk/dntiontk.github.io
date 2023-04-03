@@ -1,9 +1,9 @@
 +++
-title = "city coding"
+title = "civic code"
 date = "2023-03-30"
 author = "dev"
 cover = ""
-tags = ["code", "politics", "windsor", "city-council", "planning", "analytics"]
+tags = ["code", "politics", "windsor", "city-council", "planning", "analytics", "civic-code"]
 showFullContent = false
 +++
 
