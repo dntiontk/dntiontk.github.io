@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/aggregation/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/civics/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/code/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/news/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rss/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/rss-feed-aggregation/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windsor/</loc>
+    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/analytics/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url>
@@ -23,37 +73,12 @@
   </url>
   
   <url>
-    <loc>/tags/code/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/planning/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/politics/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/windsor/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url>
   
