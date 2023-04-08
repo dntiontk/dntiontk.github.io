@@ -135,7 +135,7 @@ func lookupUpdates(m map[string]time.Time, items []*rss.Item) ([]*rss.Item, erro
 }
 ```
 
-To see the full code, go to https://github.com/dntiontk/dntiontk.github.io/code/rss-feed-aggregator
+To see the full code, go to https://github.com/dntiontk/dntiontk.github.io/tree/main/code/rss-feed-aggregator
 
 
 Next time, we'll work on setting up our **publisher** Github Action to generate a new hugo post and commit the change. We'll also try adding in our Newsroom feed.
