@@ -17,7 +17,7 @@ First, we need to identify which feeds we'll be using. For now, we are going to 
 - City of Windsor Newsroom -> https://www.citywindsor.ca/Pages/RssFeed.aspx?Catalogue=News
 - City of Windsor Open Data Catalogue -> https://opendata.citywindsor.ca/RSS
 
-We'll also need to model the expected output, just to give us something to design. 
+I like to make a quick prototype out the expected output before beginning development. I typically keep it quick and dirty, with just enough information to get started.
 
 The output will look something like:
 
@@ -37,7 +37,49 @@ The flow we expect to use is that our aggregator fetches the current raw feed (i
 
 ## The aggregator
 
-TODO: render code/rss-feed-aggregator/main.go
+As I started to explore the Open Data catalogue, I found something that suprised me, although in retrospect, I should have known. The Open Data RSS feed is **horribly** maintained. It seems that files are uploaded frequently, but there is no metadata. Basically, every item has a title, a link (usually a YTD .csv file) and a publish date. 
+
+Before we get to the code, I'm going to go on a little bit of a rant. City-based Open Data catalogues provide an incredible opportunity for a city to grow, become more resilient, and make effective and positive change. We can better understand and address the issues that affect our communities. We can make intelligent and informed decisions, and really take control of our collective destiny.
+
+Anyway, here is the data structure of the 5th item in the feed:
+```
+{
+    "title": "05 Grand Marais.csv",
+    "link": "http://opendata.citywindsor.ca/uploads/05 Grand Marais.csv",
+    "links": [
+        "http://opendata.citywindsor.ca/uploads/05 Grand Marais.csv"
+    ],
+    "pubDate": "3/23/2023 2:46:24 PM",
+    "pubDateParsed": "2023-03-23T14:46:24Z"
+}
+```
+
+*What is this?* After doing a bit of digging, I found out that its **precipitation** data from the Grand Marais Rd. precipitation gauge.
+
+And this is what I mean when I say that it feels like they've made it intentionally bad. 
+
+---
+
+Now let's get to the code. We have a pretty simple program for the most part. First we parse the local copy of the Open Data feed. If it doesn't exist, we return an empty feed. We then add each item to a map with a formatted timestamp.
+
+```golang
+// TODO: render main.go#61-80
+```
+
+Next we parse the remote feed, and write the XML data to a file. We're going to use a data type we'll call `FeedConfig` to simplify this process.
+
+```golang
+// TODO: render main.go#147-167
+```
+
+Lastly, we lookup each item in the map we created earlier. If the item is not in the map, we add it to our updated items list. If the item is in the map, but the timestamps don't match, we add it to updated items list.
+
+```golang
+// TODO: render main#103-120
+```
+
+We then generate and output the summary.
+
 
 ## The publisher
 
