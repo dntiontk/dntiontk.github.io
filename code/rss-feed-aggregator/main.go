@@ -58,8 +58,25 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Get our Open Data update list
+	opendataUpdates, err := getFeedUpdates(client, &opendataFeed)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	// Parse our local copy of the opendata feed
-	localOpendataFeed, err := opendataFeed.parseLocalFeed()
+
+	// exit if no changes found
+	if len(opendataUpdates) == 0 {
+		log.Println("no changes found")
+	} else {
+		// generate summary
+		fmt.Println(generateSummary(opendataUpdates))
+	}
+}
+
+func getFeedUpdates(client *http.Client, fc *FeedConfig) ([]*rss.Item, error) {
+	localFeed, err := fc.parseLocalFeed()
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -70,34 +87,23 @@ func main() {
 	*/
 	itemMap := make(map[string]time.Time)
 
-	for _, item := range localOpendataFeed.Items {
+	for _, item := range localFeed.Items {
 		formatted := item.PubDateParsed.Format(time.RFC3339)
 		pubDate, err := time.Parse(time.RFC3339, formatted)
 		if err != nil {
-			log.Fatalf("unable to parse date from local feed: %v", err)
+			return nil, fmt.Errorf("unable to parse date from local feed: %v", err)
 		}
 		itemMap[item.Title] = pubDate
 	}
 
 	// Parse the remote copy of the opendata feed
-	remoteOpendataFeed, err := opendataFeed.parseRemoteFeed(client)
+	remoteFeed, err := fc.parseRemoteFeed(client)
 	if err != nil {
-		log.Fatal(err)
+		return nil, fmt.Errorf("unable to parse remote feed: %v", err)
 	}
 
 	// Make updatedItems lists
-	updates, err := lookupUpdates(itemMap, remoteOpendataFeed.Items)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	// exit if no changes found
-	if len(updates) == 0 {
-		log.Println("no changes found")
-	} else {
-		// generate summary
-		fmt.Println(generateSummary(updates))
-	}
+	return lookupUpdates(itemMap, remoteFeed.Items)
 }
 
 func lookupUpdates(m map[string]time.Time, items []*rss.Item) ([]*rss.Item, error) {
