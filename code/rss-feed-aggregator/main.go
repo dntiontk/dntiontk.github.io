@@ -17,12 +17,12 @@ import (
 
 /*
 This is a simple RSS feed aggregator for the City of Windsor website
-that uses the City of Windsor Newsroom feed and the Open data feed to
-create a summary of changes. When invoked, the program will fetch the
-the remote feed, and compare it to a local copy. After generating and
-outputting the a summary of changes, the remote copy will overwrite
-the local copy (create if it doesn't exist). The invoker is responsible
-for keeping the local copy up-to-date.
+that uses the Open Data feed to create a summary of changes. When 
+invoked, the program will fetch the the remote feed, and compare 
+it to a local copy. After generating and outputting the a summary 
+of changes, the remote copy will overwrite the local copy 
+(create if it doesn't exist). The invoker is responsible for keeping
+ the local copy up-to-date.
 */
 
 // FeedConfig contains the url, name and filepath of a given RSS feed
@@ -33,11 +33,6 @@ type FeedConfig struct {
 }
 
 var (
-	newsroomFeed = FeedConfig{
-		url:  "https://www.citywindsor.ca/Pages/RssFeed.aspx?Catologue=News",
-		name: "Newsroom",
-		path: "feeds/news.xml",
-	}
 	opendataFeed = FeedConfig{
 		url:  "https://opendata.citywindsor.ca/RSS",
 		name: "Open Data",
@@ -125,7 +120,7 @@ func lookupUpdates(m map[string]time.Time, items []*rss.Item) ([]*rss.Item, erro
 	return out, nil
 }
 
-func generateSummary(updated []*rss.Item) string {
+func generateSummary(feedLists []*rss.Item...) string {
 	var out string
 	out += "updated items:\n"
 	for _, i := range updated {
