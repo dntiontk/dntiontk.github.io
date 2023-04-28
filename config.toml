@@ -1,88 +1,64 @@
-baseURL = "/"
-title = "dntion.tk"
+baseURL = "https://dntiontk.github.io/"
 languageCode = "en-us"
+title = "dntiontk.github.io"
+
+theme = "hugo-ficurinia"
+
+author = "dntiontk::dev"
+copyright = "dntiontk::dev - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)."
+
 paginate = 5
+summaryLength = 30
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+    description = "code and politics"
+    author = "::dev"
+    logo = "/logo.svg"
+    favicon = "/favicon.png"
+    faviconIco = "/favicon.ico"
+    appletouch = "/apple-touch-icon.png"
+    svgicon = "/logo.svg"
+    icon512 = "/android-chrome-512x512.png"
+    # commento = "https://cloud.techpills.technology:54321/js/commento.js"
+    cactusCommentsSiteName = "dntiontk.github.io"
+    cactusCommentsServerName = "cactus.chat"
+    cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
+    
+    showRss = false
+    imageInArticlePreview = true
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
+    enableShareOnFediverse = true
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+    enableRelatedArticles = true
+    relatedArticlesNum = 2 
+    forceRedirect = true
 
-  # show selector to switch language
-  showLanguageSelector = false
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = false
+        lineNumbersInTable = false
+        tabWidth = 4
+        style = "dracula"
+    [markup.tableOfContents]
+        endLevel = 5
+        ordered = false
+        startLevel = 1
 
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = false
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # set all headings to their default size (depending on browser settings)
-  # oneHeadingSize = true # default
-
-  # whether to show a page's estimated reading time
-  # readingTime = false # default
-  readingTime = true
-
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
-
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "dntiontk.github.io"
-    subtitle = "code and politics"
-    owner = "dev"
-    keywords = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
-
-    [languages.en.params.logo]
-      logoText = "dntiontk.github.io"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+[menu]
+    [[menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
-
-[module]
-
-[[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal'
+        url = "/about/"
+        weight = 10
+    [[menu.icons]]
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/dntiontk"
+        weight = 20
+    [[menu.icons]]
+        identifier = "rss"
+        name = "RSS"
+        url = "/posts/index.xml"
+        weight = 10
