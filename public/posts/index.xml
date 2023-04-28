@@ -2,33 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on dntiontk.github.io</title>
-    <link>/posts/</link>
+    <link>https://dntiontk.github.io/posts/</link>
     <description>Recent content in Posts on dntiontk.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>dntiontk::dev - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dntiontk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RSS Feed aggregation</title>
-      <link>/posts/rss-feed-aggregation/</link>
-      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <link>https://dntiontk.github.io/posts/rss-feed-aggregation/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/rss-feed-aggregation/</guid>
-      <description>This post is related to my previous post about civic code. I mentioned that there are multiple RSS feeds that the city maintains, and that this data is not particularly easy to find and parse.
-We are going to create an RSS feed aggregator creates a weekly summary and automatically creates a new post on this blog.
-The data First, we need to identify which feeds we&amp;rsquo;ll be using. For now, we are going to keep the list small, however we expect that there will be more sources as time goes on:</description>
+      <guid>https://dntiontk.github.io/posts/rss-feed-aggregation/</guid>
+      <description>This post is related to my previous post about civic code. I mentioned that there are multiple RSS feeds that the city maintains, and that this data is not particularly easy to find and parse.</description>
     </item>
     
     <item>
       <title>civic code</title>
-      <link>/posts/civic-code/</link>
+      <link>https://dntiontk.github.io/posts/civic-code/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/civic-code/</guid>
-      <description>I frequently find myself on the City of Windsor website. I&amp;rsquo;ll scroll through city council meeting agendas and videos, browse the open data catalogue, check for newsroom headlines; annoyed by how outdated it feels the entire time. This isn&amp;rsquo;t about the look of the site either. I don&amp;rsquo;t really care about the asthetics. I&amp;rsquo;m talking about it feeling like the site is intentionally disjointed and built in a way to make engagement a little bit harder.</description>
+      <guid>https://dntiontk.github.io/posts/civic-code/</guid>
+      <description>I frequently find myself on the City of Windsor website. I&amp;rsquo;ll scroll through city council meeting agendas and videos, browse the open data catalogue, check for newsroom headlines; annoyed by how outdated it feels the entire time.</description>
     </item>
     
   </channel>

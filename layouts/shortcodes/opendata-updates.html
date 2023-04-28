@@ -1,0 +1,6 @@
+<h3>Windsor Open Data Catalogue - CHANGELOG {{ time.Format "2006-01-02" .Page.PublishDate }} </h3>
+<ul class="updates">
+    {{ range .Page.Params.updates }}
+        <li><a href="{{ .link }}">{{ .name }}</a> - ({{ .date }})</li>
+    {{ end }}
+</ul>

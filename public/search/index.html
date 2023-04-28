@@ -31,6 +31,8 @@
 
 <title>
         
+            Search  &ndash;
+        
         dntiontk.github.io
     </title>
 
@@ -39,21 +41,19 @@
     <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
 
     
-        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-    
     
     <link type="text/css" rel="stylesheet" href=https://dntiontk.github.io/css/styles.abbd6311bb4b6ca58f8e7398140529245ae0f6428b759fcd830742eee2619eabb900ba9914a9affb82aa9a16a9b9ea727bb315315a976a0db0e7513a5f12c504.css integrity="sha512-q71jEbtLbKWPjnOYFAUpJFrg9kKLdZ/NgwdC7uJhnqu5ALqZFKmv&#43;4Kqmhapuepye7MVMVqXag2w51E6XxLFBA==" />
 <meta name="author" content="::dev" />
 
     
     
-        <meta name="description" content="ftware developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge between these interests in a benefitial way." />
+        <meta name="description" content="" />
     
 
 <meta property="og:site_name"
     content='dntiontk.github.io' />
 
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Search" />
     <meta property="og:type" content="article" />
     
     <meta
@@ -62,30 +62,30 @@
         property="article:published_time"
         content='0001-01-01T00:00:00Z&#43;0000' />
     
-    <meta property="og:url" content="https://dntiontk.github.io/about/" />
+    <meta property="og:url" content="https://dntiontk.github.io/search/" />
     
     
     <meta property="og:image"
         content="https://dntiontk.github.io/android-chrome-512x512.png" />
     
-        <meta property="og:description" content="I&amp;rsquo;m a Black software developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge" />
+        <meta property="og:description" content="" />
     
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:domain"
       content='dntiontk.github.io'
 />
-<meta property="twitter:url" content="https://dntiontk.github.io/about/" />
+<meta property="twitter:url" content="https://dntiontk.github.io/search/" />
 
 
-    <meta name="twitter:title" content="" />
+    <meta name="twitter:title" content="Search" />
     
     
     
     <meta name="twitter:image"
         content="https://dntiontk.github.io/android-chrome-512x512.png" />
     
-        <meta name="twitter:description" content="I&amp;rsquo;m a Black software developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge" />
+        <meta name="twitter:description" content="" />
     
 
 <link rel="manifest" href="/manifest/index.json" />
@@ -132,19 +132,7 @@
 </div>
             </div>
         </div>
-        <div class="search">
-    <input id="searchbar" type="text" placeholder='Search' />
-    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
-</div>
-<script>
-    function newSearch() {
-        let term = searchbar.value.trim();
-        if (!term) return;
-        location.href = `/search?q=${term}`;
-    }
-    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
-</script>
-
+        
     </div>
     <div id="links">
         
@@ -187,88 +175,103 @@
 <div id="contentContainer">
                 <div id="content">
                     <main>
-<article class="card single">
-    
-        <h1></h1>
-    
-    
-        <p class="date">
-            <span title='Date'> </span>
-    0001-01-01
-
-</p>
-    
-    
-    
-    
-    <div><p>I&rsquo;m a Black software developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge between these interests in a benefitial way. Thanks for visiting.</p>
-<hr>
-<p><strong>Keep coding with purpose! ::dev</strong></p>
+<noscript>
+    You need to enable JavaScript to be able to search.
+</noscript><div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
 </div>
-</article>
-
-
-    <a style="margin-bottom: 24px; display: inline-block;" class="shareBtn" onclick="openFediInstanceDialog();">
-        Share on the Fediverse
-    </a>
-    <div id="fediInstanceDialog">
-        <div class="bg" onclick="closeFediInstanceDialog();"></div>
-        <div class="dialog">
-            <h2>Enter your instance&#39;s address</h2>
-            <input id="fediInstanceInput" placeholder='Eg. mastodon.social' type="text" />
-            <div class="buttons">
-                <a class="shareBtn" onclick="closeFediInstanceDialog();">Cancel</a>
-                <a class="shareBtn" onclick="shareOnFedi();">Share</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        var articleTitle = '';
-        var articleLink = 'https:\/\/dntiontk.github.io\/about\/';
-        var fediInstanceDialog = document.getElementById('fediInstanceDialog');
-        var fediInstanceInput = document.getElementById('fediInstanceInput');
-        function openFediInstanceDialog() {
-            fediInstanceDialog.classList.add('open');
-        }
-        function closeFediInstanceDialog() {
-            fediInstanceDialog.classList.remove('open');
-        }
-        function fixURL(url) {
-            if (url.substr(0, 8) == 'https://') return url;
-            if (url.substr(0, 7) == 'http://') return url;
-            return 'https://' + url;
-        }
-        function shareOnFedi() {
-            let instance = fediInstanceInput.value.trim();
-            if (!instance) {
-                return;
-            }
-            instance = fixURL(instance);
-            window.open(
-                `${instance}/share?text=${articleTitle}%20${articleLink}`,
-                '__blank'
-            );
-            closeFediInstanceDialog();
-        }
-    </script>
-
-
-
-<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-
-<div id="ficurinia-cactus-comments"></div>
-
 <script>
-initComments({
-    node: document.getElementById("ficurinia-cactus-comments"),
-    defaultHomeserverUrl: 'https:\/\/matrix.cactus.chat:8448',
-    serverName: 'cactus.chat',
-    siteName: "dntiontk.github.io",
-    commentSectionId: "8576ec274c98b3831668a172fa632d80"
-})
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
 </script>
-
-
+<div class="postlist " id="postlist">
+</div><script>
+    function renderTags(tags) {
+        if (tags.length <= 0) return '';
+        let res = `| <span title='Tags'> </span>`;
+        for (let tag of tags) {
+            //                                        regular space
+            res += `<a href="/tags/${tag}">#${tag}</a>&#32;`;
+        }
+        return res;
+    }
+    function renderImage(image, link, alt) {
+        if (!image) return '';
+        return `<a href="${link}"><img src="${image}" alt="${alt}" /></a>`;
+    }
+    function renderSingleArticle(article) {
+        return `
+        <article class="card postlistitem">
+            <div>
+                <h2>
+                    <a href="${article.link}">${article.title}</a>
+                </h2>
+                <p class="date">
+                    <span title='Date'> </span>
+                    ${article.date}
+                    
+                        ${renderTags(article.tags)}
+                    
+                </p>
+                
+                    ${renderImage(article.image, article.link, article.imageAlt)}
+                
+                
+                    <div class="articlePreview">
+                        <p>${article.summary}</p>
+                        <p><a href="${article.link}">Continue reading </a></p>
+                    </div>
+                
+            </div>
+            <hr />
+        </article>
+        `;
+    }
+    function renderArticles(articles) {
+        let rendered = articles.map(a => renderSingleArticle(a)).join('\n');
+        document.getElementById('postlist').innerHTML += rendered;
+    }
+</script>
+<script>
+    function matchTags(page, term) {
+        for (let tag of page.tags) {
+            if (tag.includes(term)) return true;
+        }
+        return false;
+    }
+    function performSearch(term) {
+        document.getElementById('postlist').innerHTML = '';
+        term = term.toLowerCase();
+        fetch('/search/index.json').then(res => res.json())
+        .then(res => {
+            let articles = res.pages.filter(page => (
+                page.title.toLowerCase().includes(term) ||
+                matchTags(page, term) ||
+                page.text.includes(term)
+            ));
+            if (articles.length > 0) renderArticles(articles);
+            else document.getElementById('postlist').innerHTML = `
+                <h3>No results found</h3>
+            `;
+        });
+    }
+    var url = location.href;
+    var baseUrl = url.split('?')[0];
+    var searchbar = document.getElementById('searchbar');
+    if (url.includes('?')) {
+        var urlParams = new URLSearchParams(url.split('?')[1]);
+        if (urlParams.has('q')) {
+            let searchTerm = urlParams.get('q');
+            searchbar.value = searchTerm;
+            performSearch(searchTerm);
+        }
+    }
+</script>
 
                     </main><footer>
     <hr />

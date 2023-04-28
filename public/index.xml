@@ -1,46 +1,251 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet href="/feed_style.xsl" type="text/xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="https://www.rssboard.org/media-rss">
   <channel>
     <title>dntiontk.github.io</title>
-    <link>/</link>
+    <link>https://dntiontk.github.io/</link>
     <description>Recent content on dntiontk.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>dntiontk::dev - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).</copyright>
+    <lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dntiontk.github.io/index.xml" rel="self" type="application/rss+xml" /><icon>https://dntiontk.github.io/logo.svg</icon>
     
     
     <item>
       <title>RSS Feed aggregation</title>
-      <link>/posts/rss-feed-aggregation/</link>
-      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <link>https://dntiontk.github.io/posts/rss-feed-aggregation/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/rss-feed-aggregation/</guid>
-      <description>This post is related to my previous post about civic code. I mentioned that there are multiple RSS feeds that the city maintains, and that this data is not particularly easy to find and parse.
-We are going to create an RSS feed aggregator creates a weekly summary and automatically creates a new post on this blog.
-The data First, we need to identify which feeds we&amp;rsquo;ll be using. For now, we are going to keep the list small, however we expect that there will be more sources as time goes on:</description>
+      <guid>https://dntiontk.github.io/posts/rss-feed-aggregation/</guid>
+      <description><![CDATA[<p>This post is related to my previous post about <a href="https://dntiontk.github.io/posts/civic-code/">civic code</a>. I mentioned that there are multiple RSS feeds that the city maintains, and that this data is not particularly easy to find and parse.</p>
+<p>We are going to create an RSS feed aggregator creates a weekly summary and automatically creates a new post on this blog.</p>
+<h2 id="the-process">The process</h2>
+<p>The flow we expect to use is that our aggregator fetches the current raw feed (if it exists) from its local storage. It compares the local copy to the remote copy of the feed and uses that data to summarize the changes over the past week. The summary is published as a <code>hugo content post</code>, the local feed state is updated, and a commit is pushed via git.</p>
+<h2 id="the-aggregator">The aggregator</h2>
+<p>As I started to explore the Open Data catalogue, I found something that suprised me, although in retrospect, I should have known. The Open Data RSS feed is <strong>horribly</strong> maintained. It seems that files are uploaded frequently, but there is no metadata. Basically, every item has a title, a link (usually a YTD .csv file) and a publish date.</p>
+<p>Before we get to the code, I&rsquo;m going to go on a little bit of a rant. City-based Open Data catalogues provide an incredible opportunity for a city to grow, become more resilient, and make effective and positive change. We can better understand and address the issues that affect our communities. We can make intelligent and informed decisions, and really take control of our collective destiny.</p>
+<p>Anyway, here is the data structure of the 5th item in the feed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;05 Grand Marais.csv&#34;,
+</span></span><span style="display:flex;"><span>    &#34;link&#34;: &#34;http://opendata.citywindsor.ca/uploads/05 Grand Marais.csv&#34;,
+</span></span><span style="display:flex;"><span>    &#34;links&#34;: [
+</span></span><span style="display:flex;"><span>        &#34;http://opendata.citywindsor.ca/uploads/05 Grand Marais.csv&#34;
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    &#34;pubDate&#34;: &#34;3/23/2023 2:46:24 PM&#34;,
+</span></span><span style="display:flex;"><span>    &#34;pubDateParsed&#34;: &#34;2023-03-23T14:46:24Z&#34;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>What is this?</em> After doing a bit of digging, I found out that its <strong>precipitation</strong> data from the Grand Marais Rd. precipitation gauge.</p>
+<p>And this is what I mean when I say that it feels like they&rsquo;ve made it intentionally bad.</p>
+<hr>
+<h3 id="the-code">The code</h3>
+<p>Now let&rsquo;s get to the code. We have a pretty simple program for the most part. All the code can be found at <a href="https://github.com/dntiontk/rss-feed-aggregator">https://github.com/dntiontk/rss-feed-aggregator</a>.</p>
+<p>First we parse the local copy of the Open Data feed. If it doesn&rsquo;t exist, we return an empty feed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">parseLocalFeed</span>(path <span style="color:#8be9fd">string</span>) (<span style="color:#ff79c6">*</span>rss.Feed, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span>	b, err <span style="color:#ff79c6">:=</span> os.<span style="color:#50fa7b">ReadFile</span>(path)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">if</span> os.<span style="color:#50fa7b">IsNotExist</span>(err) {
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">&amp;</span>rss.Feed{}, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">&amp;</span>rss.Feed{}, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to read local feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	feed, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">parseRSSFeed</span>(bytes.<span style="color:#50fa7b">NewBuffer</span>(b))
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">&amp;</span>rss.Feed{}, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to parse local feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> feed, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next we parse the remote feed, and write the XML data to a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">parseRemoteFeed</span>(c <span style="color:#ff79c6">*</span>http.Client, path, url <span style="color:#8be9fd">string</span>) (<span style="color:#ff79c6">*</span>rss.Feed, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span>	resp, err <span style="color:#ff79c6">:=</span> c.<span style="color:#50fa7b">Get</span>(url)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to get remote feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">defer</span> resp.Body.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	data, err <span style="color:#ff79c6">:=</span> io.<span style="color:#50fa7b">ReadAll</span>(resp.Body)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">write</span>(data, path); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	feed, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">parseRSSFeed</span>(bytes.<span style="color:#50fa7b">NewBuffer</span>(data))
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to parse remote feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> feed, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We&rsquo;re going to now create a <code>getFeedUpdates</code> function which fetches the local feed, creates a <code>map[string]time.Time</code> to lookup items fetches the remote feed, and call the <code>lookupUpdates</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">getFeedUpdates</span>(client <span style="color:#ff79c6">*</span>http.Client, path, url <span style="color:#8be9fd">string</span>) ([]<span style="color:#ff79c6">*</span>rss.Item, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span>	localFeed, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">parseLocalFeed</span>(path)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">		Let&#39;s create a map[string]time.Time to quickly lookup items and
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">		compare dates
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">	*/</span>
+</span></span><span style="display:flex;"><span>	itemMap <span style="color:#ff79c6">:=</span> <span style="color:#8be9fd;font-style:italic">make</span>(<span style="color:#8be9fd;font-style:italic">map</span>[<span style="color:#8be9fd">string</span>]time.Time)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">for</span> _, item <span style="color:#ff79c6">:=</span> <span style="color:#ff79c6">range</span> localFeed.Items {
+</span></span><span style="display:flex;"><span>		formatted <span style="color:#ff79c6">:=</span> item.PubDateParsed.<span style="color:#50fa7b">Format</span>(time.RFC3339)
+</span></span><span style="display:flex;"><span>		pubDate, err <span style="color:#ff79c6">:=</span> time.<span style="color:#50fa7b">Parse</span>(time.RFC3339, formatted)
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to parse date from local feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		itemMap[item.Title] = pubDate
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">// Parse the remote copy of the opendata feed
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>	remoteFeed, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">parseRemoteFeed</span>(client, path, url)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;unable to parse remote feed: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">// Make updatedItems lists
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>	<span style="color:#ff79c6">return</span> <span style="color:#50fa7b">lookupUpdates</span>(itemMap, remoteFeed.Items)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We need to lookup each item in the map we created earlier. If the item is not in the map, we add it to our updated items list. If the item is in the map, but the timestamps don&rsquo;t match, we add it to updated items list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">lookupUpdates</span>(m <span style="color:#8be9fd;font-style:italic">map</span>[<span style="color:#8be9fd">string</span>]time.Time, items []<span style="color:#ff79c6">*</span>rss.Item) ([]<span style="color:#ff79c6">*</span>rss.Item, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span>	updatedItems <span style="color:#ff79c6">:=</span> <span style="color:#8be9fd;font-style:italic">make</span>([]<span style="color:#ff79c6">*</span>rss.Item, <span style="color:#bd93f9">0</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">for</span> _, i <span style="color:#ff79c6">:=</span> <span style="color:#ff79c6">range</span> items {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">if</span> date, ok <span style="color:#ff79c6">:=</span> m[i.Title]; ok {
+</span></span><span style="display:flex;"><span>			formatted <span style="color:#ff79c6">:=</span> i.PubDateParsed.<span style="color:#50fa7b">Format</span>(time.RFC3339)
+</span></span><span style="display:flex;"><span>			rDate, err <span style="color:#ff79c6">:=</span> time.<span style="color:#50fa7b">Parse</span>(time.RFC3339, formatted)
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, err
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">if</span> !rDate.<span style="color:#50fa7b">Equal</span>(date) {
+</span></span><span style="display:flex;"><span>				updatedItems = <span style="color:#8be9fd;font-style:italic">append</span>(updatedItems, i)
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		} <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>			updatedItems = <span style="color:#8be9fd;font-style:italic">append</span>(updatedItems, i)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> updatedItems, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Lasty, here are some helper functions to write to a local file and to parse the RSS feed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">write</span>(b []<span style="color:#8be9fd">byte</span>, path <span style="color:#8be9fd">string</span>) <span style="color:#8be9fd">error</span> {
+</span></span><span style="display:flex;"><span>	f, err <span style="color:#ff79c6">:=</span> os.<span style="color:#50fa7b">Create</span>(path)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> _, err <span style="color:#ff79c6">:=</span> f.<span style="color:#50fa7b">Write</span>(b); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">parseRSSFeed</span>(r io.Reader) (<span style="color:#ff79c6">*</span>rss.Feed, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span>	fp <span style="color:#ff79c6">:=</span> rss.Parser{}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	feed, err <span style="color:#ff79c6">:=</span> fp.<span style="color:#50fa7b">Parse</span>(r)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, err
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> feed, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When invoking this program, we&rsquo;re going to pass it a flag identifying the path to the local XML and the remote URL of the feed. We&rsquo;re also going to have to add the citywindsor.ca CA cert. This is much easier than digging into:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>curl: (60) SSL certificate problem: unable to get local issuer certificate
+</span></span></code></pre></div><p>Our main function wraps all the above and outputs the changes in JSON format.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">main</span>() {
+</span></span><span style="display:flex;"><span>	flag.<span style="color:#50fa7b">StringVar</span>(<span style="color:#ff79c6">&amp;</span>pathFlag, <span style="color:#f1fa8c">&#34;path&#34;</span>, <span style="color:#f1fa8c">&#34;./feeds/opendata.xml&#34;</span>, <span style="color:#f1fa8c">&#34;path to local xml file to diff&#34;</span>)
+</span></span><span style="display:flex;"><span>	flag.<span style="color:#50fa7b">StringVar</span>(<span style="color:#ff79c6">&amp;</span>urlFlag, <span style="color:#f1fa8c">&#34;url&#34;</span>, <span style="color:#f1fa8c">&#34;https://opendata.citywindsor.ca/RSS&#34;</span>, <span style="color:#f1fa8c">&#34;RSS feed url&#34;</span>)
+</span></span><span style="display:flex;"><span>	flag.<span style="color:#50fa7b">Parse</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">		Note that we need to add the ca-cert for &#34;citywindsor.ca&#34; to
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">		to our HTTP client in order to access the data programatically
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">	*/</span>
+</span></span><span style="display:flex;"><span>	client, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">newClientWithCA</span>(cert)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		log.<span style="color:#50fa7b">Fatal</span>(err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">// Get our Open Data update list
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>	opendataUpdates, err <span style="color:#ff79c6">:=</span> <span style="color:#50fa7b">getFeedUpdates</span>(client, pathFlag, urlFlag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>		log.<span style="color:#50fa7b">Fatal</span>(err)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">// exit if no changes found
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>	<span style="color:#ff79c6">if</span> <span style="color:#8be9fd;font-style:italic">len</span>(opendataUpdates) <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span> {
+</span></span><span style="display:flex;"><span>		log.<span style="color:#50fa7b">Printf</span>(<span style="color:#f1fa8c">&#34;no changes found&#34;</span>)
+</span></span><span style="display:flex;"><span>	} <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>		b, err <span style="color:#ff79c6">:=</span> json.<span style="color:#50fa7b">MarshalIndent</span>(opendataUpdates, <span style="color:#f1fa8c">&#34;&#34;</span>, <span style="color:#f1fa8c">&#34;  &#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>			log.<span style="color:#50fa7b">Fatal</span>(err)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		log.<span style="color:#50fa7b">Printf</span>(<span style="color:#f1fa8c">&#34;%s&#34;</span>, b)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This code will likely change over time, but the concept works. Next time, we&rsquo;ll write the workflow that runs the <code>rss-feed-aggregator</code>, creates a new hugo post, updates the local copy of the feed, and commits the changes on a weekly basis.</p>
+<p><strong>Keep coding with purpose!  ::dev</strong></p>
+]]></description>
+      
     </item>
+    
+    
     
     <item>
       <title>civic code</title>
-      <link>/posts/civic-code/</link>
+      <link>https://dntiontk.github.io/posts/civic-code/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/civic-code/</guid>
-      <description>I frequently find myself on the City of Windsor website. I&amp;rsquo;ll scroll through city council meeting agendas and videos, browse the open data catalogue, check for newsroom headlines; annoyed by how outdated it feels the entire time. This isn&amp;rsquo;t about the look of the site either. I don&amp;rsquo;t really care about the asthetics. I&amp;rsquo;m talking about it feeling like the site is intentionally disjointed and built in a way to make engagement a little bit harder.</description>
+      <guid>https://dntiontk.github.io/posts/civic-code/</guid>
+      <description><![CDATA[<p>I frequently find myself on the <a href="https://www.citywindsor.ca/Pages/Home.aspx">City of Windsor</a> website. I&rsquo;ll scroll through city council meeting agendas and videos, browse the open data catalogue, check for newsroom headlines; annoyed by how outdated it feels the entire time. This isn&rsquo;t about the look of the site either. I don&rsquo;t really care about the asthetics. I&rsquo;m talking about it feeling like the site is intentionally disjointed and built in a way to make engagement a <em>little bit</em> harder.</p>
+<p>I&rsquo;m not saying that <em>it is</em> purposeful. But if it was, and the goal was to encourage <strong>apathy</strong> while maintaining plausible deniability, I would consider it a very effective website.</p>
+<p>There are absolutely positive things about the website and there is a lot of data if don&rsquo;t mind digging. However, the user experience is a deterrent.</p>
+<p>As you can probably tell from this site, my &ldquo;user experience&rdquo; skills aren&rsquo;t the best&hellip; but I do have the skills to improve <strong>my</strong> experience when interacting with the city&rsquo;s data.</p>
+<h3 id="the-plan">The plan</h3>
+<p>I&rsquo;ve broken the plan down into three areas of focus to start. There may be more changes, but this gives me a place to start.</p>
+<h4 id="open-data">Open Data</h4>
+<p>There is an Open Data catalogue with 98 items, each of which have 1 or more data files. There is an RSS feed, so we have the ability to be notified on updates. We can use this data to build out dashboards, maps and other forms of data visualization that are actually meaningful to our community. Making data available is not the same as making data accessible.</p>
+<h4 id="info-feeds">Info Feeds</h4>
+<p>There are a few different RSS feeds that the city maintains. The one that I&rsquo;m particularly interested in is the <a href="https://www.citywindsor.ca/newsroom/Pages/default.aspx">Newsroom Headlines</a>. Pairing this with other local news RSS feeds like <a href="https://www.cbc.ca/cmlink/rss-canada-windsor">CBC Windsor</a> would allow the building of a simple news aggregator. Unfortunately, <a href="https://windsorite.ca/">Windsorite.ca</a> does not have an RSS feed, but maybe that is a future project.</p>
+<h4 id="council-data">Council Data</h4>
+<p>This area was originally what got me fired up about this. Why, in the year 2023, on Soulja Boy&rsquo;s internet, do we not have downloadable transcriptions of city council meetings? You can get captions, if you watch the video on the janky sliq.net site, but its just the captions included in the screen recording of a Zoom session. The meeting index is not well organized either. You have to open up a menu just to see what documents (agenda, minutes, video link, appendices, etc.) have been added to a particular meeting. The meeting documents, and the video are hosted on separate sites, meaning I need both open if I want to follow along. Also, I shouldn&rsquo;t need a browser to download city council meeting videos. Ideally, I should be able to download the video, transcription and associated documents via an API.</p>
+<h3 id="the-action">The action</h3>
+<p>The goal is to create a bunch of smaller programs (mostly in Golang, but maybe some python if necessary) that can interact with this blog in an automated way to give me (and hopefully others) a more user-friendly experience. This also allows me to play with certain disciplines (AI/Machine Learning, RSS feed aggregation, data vizualization) in a low-stakes sort of way.</p>
+<hr>
+<p><strong>Keep coding with purpose!  ::dev</strong></p>
+]]></description>
+      
     </item>
+    
+    
     
     <item>
       <title></title>
-      <link>/about/</link>
+      <link>https://dntiontk.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
-      <description>I&amp;rsquo;m a Black software developer based in Windsor, Ontario, and I&amp;rsquo;m excited to share my thoughts and experiences with you.
-As a DevOps/Platform Engineer, I&amp;rsquo;m all about automation and making things run smoothly. I&amp;rsquo;ve worked with a ton of different technologies over the years, but I&amp;rsquo;m especially into Kubernetes and all the cool things you can do with it.
-In my work, I&amp;rsquo;ve tackled a bunch of different challenges, from scaling to security to performance.</description>
+      <guid>https://dntiontk.github.io/about/</guid>
+      <description><![CDATA[<p>I&rsquo;m a Black software developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge between these interests in a benefitial way. Thanks for visiting.</p>
+<hr>
+<p><strong>Keep coding with purpose! ::dev</strong></p>
+]]></description>
+      
     </item>
+    
+    
+    
+    
+    
     
   </channel>
 </rss>

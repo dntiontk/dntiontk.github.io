@@ -1,6 +1,6 @@
 +++
 title = "RSS Feed aggregation"
-date = "2023-04-03"
+date = "2023-04-27"
 author = "dev"
 cover = ""
 tags = ["code", "windsor", "rss", "aggregation", "news", "civics"]
@@ -10,26 +10,6 @@ showFullContent = false
 This post is related to my previous post about [civic code]({{< ref "/posts/civic-code.md" >}}). I mentioned that there are multiple RSS feeds that the city maintains, and that this data is not particularly easy to find and parse. 
 
 We are going to create an RSS feed aggregator creates a weekly summary and automatically creates a new post on this blog.
-
-## The data
-
-First, we need to identify which feeds we'll be using. For now, we are going to keep the list small, however we expect that there will be more sources as time goes on:
-- City of Windsor Newsroom -> https://www.citywindsor.ca/Pages/RssFeed.aspx?Catalogue=News
-- City of Windsor Open Data Catalogue -> https://opendata.citywindsor.ca/RSS
-
-I like to make a quick prototype out the expected output before beginning development. I typically keep it quick and dirty, with just enough information to get started.
-
-The output will look something like:
-
-```
-### Weekly summary for {week}
-
-#### News
-- itemized list of changes from [previous week](link to previous week)
-
-#### Open Data Catalogue
-- itemized list of changes from [previous week](link to previous week)
-```
 
 ## The process
 
@@ -60,50 +40,54 @@ And this is what I mean when I say that it feels like they've made it intentiona
 
 ---
 
-Now let's get to the code. We have a pretty simple program for the most part. 
+### The code
 
-First we parse the local copy of the Open Data feed. If it doesn't exist, we return an empty feed. We then add each item to a map with a formatted timestamp.
+Now let's get to the code. We have a pretty simple program for the most part. All the code can be found at https://github.com/dntiontk/rss-feed-aggregator.
+
+First we parse the local copy of the Open Data feed. If it doesn't exist, we return an empty feed:
 
 ```golang
-// main.go#61-80
-// Parse our local copy of the opendata feed
-localOpendataFeed, err := opendataFeed.parseLocalFeed()
-if err != nil {
-	log.Fatal(err)
-}
-
-itemMap := make(map[string]time.Time)
-
-for _, item := range localOpendataFeed.Items {
-	formatted := item.PubDateParsed.Format(time.RFC3339)
-	pubDate, err := time.Parse(time.RFC3339, formatted)
+func parseLocalFeed(path string) (*rss.Feed, error) {
+	b, err := os.ReadFile(path)
 	if err != nil {
-		log.Fatalf("unable to parse date from local feed: %v", err)
+		if os.IsNotExist(err) {
+			return &rss.Feed{}, nil
+		}
+		return &rss.Feed{}, fmt.Errorf("unable to read local feed: %v", err)
 	}
-	itemMap[item.Title] = pubDate
+
+
+	feed, err := parseRSSFeed(bytes.NewBuffer(b))
+	if err != nil {
+		return &rss.Feed{}, fmt.Errorf("unable to parse local feed: %v", err)
+	}
+
+
+	return feed, nil
 }
 ```
 
-Next we parse the remote feed, and write the XML data to a file. We're going to use a data type we'll call `FeedConfig` to simplify this process.
+Next we parse the remote feed, and write the XML data to a file. 
 
 ```golang
-// main.go#147-167
-func (fc *FeedConfig) parseRemoteFeed(c *http.Client) (*rss.Feed, error) {
-	resp, err := c.Get(fc.url)
+func parseRemoteFeed(c *http.Client, path, url string) (*rss.Feed, error) {
+	resp, err := c.Get(url)
 	if err != nil {
 		return nil, fmt.Errorf("unable to get remote feed: %v", err)
 	}
 	defer resp.Body.Close()
 
+
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
 	}
-	if err := fc.write(data); err != nil {
+	if err := write(data, path); err != nil {
 		return nil, err
 	}
 
-	feed, err := fc.parseRSSFeed(bytes.NewBuffer(data))
+
+	feed, err := parseRSSFeed(bytes.NewBuffer(data))
 	if err != nil {
 		return nil, fmt.Errorf("unable to parse remote feed: %v", err)
 	}
@@ -111,12 +95,49 @@ func (fc *FeedConfig) parseRemoteFeed(c *http.Client) (*rss.Feed, error) {
 }
 ```
 
-Lastly, we lookup each item in the map we created earlier. If the item is not in the map, we add it to our updated items list. If the item is in the map, but the timestamps don't match, we add it to updated items list.
+We're going to now create a `getFeedUpdates` function which fetches the local feed, creates a `map[string]time.Time` to lookup items fetches the remote feed, and call the `lookupUpdates` function.
 
 ```golang
-// main#103-120
+func getFeedUpdates(client *http.Client, path, url string) ([]*rss.Item, error) {
+	localFeed, err := parseLocalFeed(path)
+	if err != nil {
+		return nil, err
+	}
+
+	/*
+		Let's create a map[string]time.Time to quickly lookup items and
+		compare dates
+	*/
+	itemMap := make(map[string]time.Time)
+
+
+	for _, item := range localFeed.Items {
+		formatted := item.PubDateParsed.Format(time.RFC3339)
+		pubDate, err := time.Parse(time.RFC3339, formatted)
+		if err != nil {
+			return nil, fmt.Errorf("unable to parse date from local feed: %v", err)
+		}
+		itemMap[item.Title] = pubDate
+	}
+
+
+	// Parse the remote copy of the opendata feed
+	remoteFeed, err := parseRemoteFeed(client, path, url)
+	if err != nil {
+		return nil, fmt.Errorf("unable to parse remote feed: %v", err)
+	}
+
+
+	// Make updatedItems lists
+	return lookupUpdates(itemMap, remoteFeed.Items)
+}
+```
+
+We need to lookup each item in the map we created earlier. If the item is not in the map, we add it to our updated items list. If the item is in the map, but the timestamps don't match, we add it to updated items list.
+
+```golang
 func lookupUpdates(m map[string]time.Time, items []*rss.Item) ([]*rss.Item, error) {
-	out := make([]*rss.Item, 0)
+	updatedItems := make([]*rss.Item, 0)
 	for _, i := range items {
 		if date, ok := m[i.Title]; ok {
 			formatted := i.PubDateParsed.Format(time.RFC3339)
@@ -125,21 +146,88 @@ func lookupUpdates(m map[string]time.Time, items []*rss.Item) ([]*rss.Item, erro
 				return nil, err
 			}
 			if !rDate.Equal(date) {
-				out = append(out, i)
+				updatedItems = append(updatedItems, i)
 			}
 		} else {
-			out = append(out, i)
+			updatedItems = append(updatedItems, i)
 		}
 	}
-	return out, nil
+	return updatedItems, nil
 }
 ```
 
-To see the full code, go to https://github.com/dntiontk/dntiontk.github.io/tree/main/code/rss-feed-aggregator
+Lasty, here are some helper functions to write to a local file and to parse the RSS feed:
+
+```golang
+func write(b []byte, path string) error {
+	f, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+	if _, err := f.Write(b); err != nil {
+		return err
+	}
+	return nil
+}
 
 
-Next time, we'll work on setting up our **publisher** Github Action to generate a new hugo post and commit the change. We'll also try adding in our Newsroom feed.
+func parseRSSFeed(r io.Reader) (*rss.Feed, error) {
+	fp := rss.Parser{}
 
----
+
+	feed, err := fp.Parse(r)
+	if err != nil {
+		return nil, err
+	}
+	return feed, nil
+}
+```
+
+When invoking this program, we're going to pass it a flag identifying the path to the local XML and the remote URL of the feed. We're also going to have to add the citywindsor.ca CA cert. This is much easier than digging into:
+
+```
+curl: (60) SSL certificate problem: unable to get local issuer certificate
+```
+
+Our main function wraps all the above and outputs the changes in JSON format.
+
+```golang
+func main() {
+	flag.StringVar(&pathFlag, "path", "./feeds/opendata.xml", "path to local xml file to diff")
+	flag.StringVar(&urlFlag, "url", "https://opendata.citywindsor.ca/RSS", "RSS feed url")
+	flag.Parse()
+	/*
+		Note that we need to add the ca-cert for "citywindsor.ca" to
+		to our HTTP client in order to access the data programatically
+	*/
+	client, err := newClientWithCA(cert)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+
+	// Get our Open Data update list
+	opendataUpdates, err := getFeedUpdates(client, pathFlag, urlFlag)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+
+	// exit if no changes found
+	if len(opendataUpdates) == 0 {
+		log.Printf("no changes found")
+	} else {
+		b, err := json.MarshalIndent(opendataUpdates, "", "  ")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+
+		log.Printf("%s", b)
+	}
+}
+```
+
+This code will likely change over time, but the concept works. Next time, we'll write the workflow that runs the `rss-feed-aggregator`, creates a new hugo post, updates the local copy of the feed, and commits the changes on a weekly basis.
 
 **Keep coding with purpose!  ::dev**

@@ -1,94 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/tags/aggregation/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/civics/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/code/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/news/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/rss/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/rss-feed-aggregation/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/windsor/</loc>
-    <lastmod>2023-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/analytics/</loc>
+    <loc>https://dntiontk.github.io/tags/aggregation/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/civics/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/code/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/news/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/posts/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/rss/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/posts/rss-feed-aggregation/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/windsor/</loc>
+    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/analytics/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/city-council/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/city-council/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/civic-code/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/posts/civic-code/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/civic-code/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/civic-code/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/planning/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/planning/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/politics/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/tags/politics/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/about/</loc>
     <priority>0</priority>
+  </url><url>
+    <loc>https://dntiontk.github.io/categories/</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/manifest/index.json</loc>
+  </url><url>
+    <loc>https://dntiontk.github.io/search/</loc>
   </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
 </urlset>
