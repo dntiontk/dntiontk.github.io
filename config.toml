@@ -24,7 +24,7 @@ summaryLength = 30
     cactusCommentsServerName = "cactus.chat"
     cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
     
-    showRss = false
+    showRss = true
     imageInArticlePreview = true
 
     enableShareOnFediverse = true
@@ -52,13 +52,13 @@ summaryLength = 30
         name = "About"
         url = "/about/"
         weight = 10
+    [[menu.main]]
+        identifier = "dashboards"
+        name = "Dashboards"
+        url = "/dashboards/"
+        weight = 10
     [[menu.icons]]
         identifier = "github"
         name = "Github"
         url = "https://github.com/dntiontk"
         weight = 20
-    [[menu.icons]]
-        identifier = "rss"
-        name = "RSS"
-        url = "/posts/index.xml"
-        weight = 10
