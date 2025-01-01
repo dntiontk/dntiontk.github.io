@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7db257ab-a95d-4eb2-aafd-84d05d61c39c" name="Changes" comment="" />
+    <list default="true" id="7db257ab-a95d-4eb2-aafd-84d05d61c39c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
