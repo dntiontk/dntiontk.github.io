@@ -56,18 +56,6 @@ We are going to create an RSS feed aggregator creates a weekly summary and autom
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/about/</guid>
-      
-      <description>I&amp;rsquo;m a Black software developer based in Windsor, Ontario. I like to write automation and I care about local politics. I hope this blog can act as a bridge between these interests in a benefitial way. Thanks for visiting.
-Keep coding with purpose! ::dev</description>
-      
-    </item>
-    
-    <item>
       <title>Dashboards</title>
       <link>http://localhost:1313/dashboards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
