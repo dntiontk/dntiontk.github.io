@@ -1,5 +1,6 @@
 title = "dntiontk.github.io"
 baseURL = 'https://dntiontk.github.io/'
+permalink = 'https://dntiontk.github.io/'
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
@@ -75,7 +76,7 @@ theme = "hugo-blog-awesome"
 
 
 [Languages.en-gb.params]
-  sitename = "dntiontk.github.io"
+  sitename = "https://dntiontk.github.io"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -123,4 +124,3 @@ url = "https://github.com/dntiontk"
 [[params.socialIcons]]
 name = "Rss"
 url = "/index.xml"
-

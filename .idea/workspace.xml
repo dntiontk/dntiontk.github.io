@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7db257ab-a95d-4eb2-aafd-84d05d61c39c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dashboards/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboards/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/civic-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/civic-code/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/open-data-dashboards/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/open-data-dashboards/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/rss-feed-aggregation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/rss-feed-aggregation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/scraping-council-meetings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/scraping-council-meetings/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/aggregation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/aggregation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/analytics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/analytics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/city-council/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/city-council/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/civic-code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/civic-code/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/civics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/civics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/code/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/data/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/news/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/opendata/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/opendata/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/planning/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/planning/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/politics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/politics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/precipitation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/precipitation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/rss/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/rss/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/scrape/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/scrape/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/windsor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/windsor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-blog-awesome" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-blog-awesome" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-blog-awesome/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-blog-awesome/layouts/partials/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +42,7 @@
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.23.4" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-blog-awesome" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
