@@ -2,61 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dntiontk.github.io/tags/aggregation/</loc>
+    <loc>http://localhost:1313/tags/city-council/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/civics/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/code/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scrape/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/scraping-council-meetings/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windsor/</loc>
+    <lastmod>2024-06-15T22:52:20-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/news/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/opendata/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/precipitation/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/open-data-dashboards/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rss/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aggregation/</loc>
     <lastmod>2023-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/civics/</loc>
+    <loc>http://localhost:1313/posts/rss-feed-aggregation/</loc>
     <lastmod>2023-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/code/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/tags/news/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/posts/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/tags/rss/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/posts/rss-feed-aggregation/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/tags/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/tags/windsor/</loc>
-    <lastmod>2023-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dntiontk.github.io/tags/analytics/</loc>
+    <loc>http://localhost:1313/tags/analytics/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/city-council/</loc>
+    <loc>http://localhost:1313/posts/civic-code/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/posts/civic-code/</loc>
+    <loc>http://localhost:1313/tags/civic-code/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/civic-code/</loc>
+    <loc>http://localhost:1313/tags/planning/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/planning/</loc>
+    <loc>http://localhost:1313/tags/politics/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dntiontk.github.io/tags/politics/</loc>
-    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://dntiontk.github.io/about/</loc>
-    <priority>0</priority>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://dntiontk.github.io/categories/</loc>
-  </url><url>
-    <loc>https://dntiontk.github.io/manifest/index.json</loc>
-  </url><url>
-    <loc>https://dntiontk.github.io/search/</loc>
+    <loc>http://localhost:1313/dashboards/</loc>
   </url>
 </urlset>

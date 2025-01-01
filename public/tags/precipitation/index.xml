@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Precipitation on dntiontk.github.io</title>
+    <link>http://localhost:1313/tags/precipitation/</link>
+    <description>Recent content in Precipitation on dntiontk.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/precipitation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Precipitation Dashboard and Open Data</title>
+      <link>http://localhost:1313/posts/open-data-dashboards/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/open-data-dashboards/</guid>
+      
+      <description>After my first attempt at making a RSS feed aggregator, I began to feel discouraged. The data that I hoped would be there was disorganized and I felt like every workaround would lead me to a new problem. I took some time away from the code, and I came back with a new approach.
+This time, instead of trying to make an aggregator, I decided to instead focus my attention to 3 smaller problems.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
