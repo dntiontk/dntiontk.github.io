@@ -73,6 +73,11 @@ theme = "hugo-blog-awesome"
     name = 'Dashboards'
     url = '/dashboards/'
     weight = 30
+  [[Languages.en-gb.menu.main]]
+    pageRef="calendar"
+    name = 'Calendar'
+    url = '/calendar/'
+    weight = 30
 
 
 [Languages.en-gb.params]
