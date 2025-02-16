@@ -1,7 +1,7 @@
 ---
 title: "Civic Code Refactor"
 date: 2025-02-16T13:36:53-05:00
-draft: true
+draft: false
 ---
 
 In November of 2024, I spent some time reworking the [city council document scraper]({{< ref "posts/scraping-council-meetings" >}}).
