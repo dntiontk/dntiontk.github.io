@@ -14,7 +14,7 @@ The new scraper is still a work in progress, but it is already better than the o
 
 I've also added a new tool, [doc-search](https://github.com/dntiontk/civic-code?tab=readme-ov-file#doc-search), which allows you to search, sort, and filter the documents.
 
-I'm utilizing this tool to automatically generate updates once a week at [Documents/City Council]({{< ref "documents/city-council" >}}). I'm hoping to add more tools in the future, so stay tuned!
+I'm utilizing this tool to automatically generate updates once a week at [Documents/City Council]({{ ref "documents/city-council" }}). I'm hoping to add more tools in the future, so stay tuned!
 
 ---
 
