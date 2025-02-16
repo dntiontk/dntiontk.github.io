@@ -1,0 +1,31 @@
+name: City Council Docs
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 0' # 12:00 AM UTC every Sunday
+  workflow_dispatch:
+
+jobs:
+  sync-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: robinraju/release-downloader@v1
+        with:
+          repository: dntiontk/civic-code
+          latest: true
+          fileName: doc-search-linux
+      - name: Run doc-search
+        run: |
+          chmod +x doc-search-linux
+          ./doc-search-linux > content/documents/documents.json
+          rm doc-search-linux
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: sync city-council docs
+          file_pattern: content/documents/documents.json
