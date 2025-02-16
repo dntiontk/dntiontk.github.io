@@ -1,9 +1,6 @@
 name: City Council Docs
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 0 * * 0' # 12:00 AM UTC every Sunday
   workflow_dispatch:
