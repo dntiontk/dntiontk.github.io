@@ -11,6 +11,8 @@ on:
 jobs:
   sync-docs:
     runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.commit.outputs.changes_detected }}
     permissions:
       contents: write
     steps:
@@ -26,6 +28,11 @@ jobs:
           ./doc-search-linux > content/documents/documents.json
           rm doc-search-linux
       - uses: stefanzweifel/git-auto-commit-action@v5
+        id: commit
         with:
           commit_message: sync city-council docs
           file_pattern: content/documents/documents.json
+  deploy-site:
+    needs: sync-docs
+    if: needs.sync-docs.outputs.changes_detected == 'true'
+    uses: ./.github/workflows/hugo.yml
