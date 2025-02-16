@@ -2,7 +2,7 @@
 title: "Documents"
 ---
 
-This page contains City Council and Committee meeting PDF documents from 2022 to 2025. You can search, sort, and filter the data. The documents are synced once a week using the [civic-code doc-search](https://github.com/dntiontk/civic-code?tab=readme-ov-file#doc-search) tool.
+This page contains City Council and Committee meeting PDF documents from 2022 to 2025 for the City of Windsor. You can search, sort, and filter the data. The documents are synced once a week automatically using the [civic-code doc-search](https://github.com/dntiontk/civic-code?tab=readme-ov-file#doc-search) tool.
 
 <!-- Latest DataTables CSS -->
 <link href="https://cdn.datatables.net/2.2.2/css/dataTables.min.css" rel="stylesheet">
