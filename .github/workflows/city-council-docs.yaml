@@ -22,17 +22,17 @@ jobs:
       - name: Run doc-search
         run: |
           chmod +x doc-search-linux
-          ./doc-search-linux > content/documents/city-council/documents.json
+          ./doc-search-linux > content/city-council-docs/documents.json
           rm doc-search-linux
       - name: Update lastSyncDate
         run: |
           lastSync=$(date -u +%F)
-          sed -i "s/lastSyncDate: .*/lastSyncDate: \"$lastSync\"/" content/documents/city-council/index.md
+          sed -i "s/lastSyncDate: .*/lastSyncDate: \"$lastSync\"/" content/city-council-docs/index.md
       - uses: stefanzweifel/git-auto-commit-action@v5
         id: commit
         with:
           commit_message: sync city-council docs
-          file_pattern: content/documents/city-council/*
+          file_pattern: content/city-council-docs/*
   deploy-site:
     needs: sync-docs
     if: needs.sync-docs.outputs.changes_detected == 'true'
