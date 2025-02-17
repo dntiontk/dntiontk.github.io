@@ -150,7 +150,7 @@ const table = new DataTable('#documentsTable', {
         search: "Search all columns:"
     },
     ajax: {
-        url: '/documents/city-council/documents.json',
+        url: '/city-council-docs/documents.json',
         dataSrc: 'items'
     },
     columns: [
