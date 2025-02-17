@@ -27,7 +27,7 @@ jobs:
       - name: Update lastSyncDate
         run: |
           lastSync=$(date -u +%F)
-          sed -i "s/lastSyncDate: .*/lastSyncDate: \"$lastSync\"/" content/documents/city-council/_index.md
+          sed -i "s/lastSyncDate: .*/lastSyncDate: \"$lastSync\"/" content/documents/city-council/index.md
       - uses: stefanzweifel/git-auto-commit-action@v5
         id: commit
         with:

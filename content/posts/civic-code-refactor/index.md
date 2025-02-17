@@ -1,6 +1,16 @@
 ---
 title: "Civic Code Refactor"
 date: 2025-02-16T13:36:53-05:00
+author: "dev"
+cover: ""
+showFullContent: false
+tags: 
+  - "code"
+  - "windsor"
+  - "civics"
+  - "city council"
+  - "data"
+  - "automation"
 draft: false
 ---
 
