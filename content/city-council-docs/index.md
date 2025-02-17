@@ -133,7 +133,6 @@ table.dataTable tbody tr:hover {
             <th>Committee</th>
             <th>Date</th>
             <th>Document</th>
-            <th>Actions</th>
         </tr>
     </thead>
     <tbody id="tableBody">
@@ -179,12 +178,8 @@ const table = new DataTable('#documentsTable', {
                                data.split('.')[0].toLowerCase().includes('minutes') ? 'Minutes' :
                                data.split('.')[0].toLowerCase().includes('consolidated') ? 'Consolidated Agenda' :
                                'Other';
-                return `<strong>${docType}</strong><div class="document-type">${data}</div>`;
+                return `<strong><a href="${row.link}" target="_blank" class="download-link">${docType}</a></strong><div class="document-type">${data}</div>`;
             }
-        },
-        { 
-            data: 'link',
-            render: (data, type, row) => `<a href="${data}" target="_blank" class="download-link">Download</a>`
         }
     ],
     initComplete: function(settings, json) {
