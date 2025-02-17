@@ -1,7 +1,7 @@
 ---
 title: "City Council Documents"
 params:
-  lastSyncDate: "2025-02-16"
+  lastSyncDate: "2025-02-17"
 ---
 
 {{< city-council-sync >}}
