@@ -1,5 +1,5 @@
 {
-  "len": 693,
+  "len": 694,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/02-26/Agenda.pdf",
@@ -144,6 +144,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/02-03/ConsolidatedAgenda.pdf",
       "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-02-03T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, February 03, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/02-03/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
