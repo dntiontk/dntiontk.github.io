@@ -27,12 +27,12 @@ jobs:
       - name: Update lastSyncDate
         run: |
           lastSync=$(date -u +%F)
-          sed -i "s/lastSyncDate = .*/lastSyncDate = \"$lastSync\"/" hugo.toml
+          sed -i "s/lastSyncDate.*/lastSyncDate = \"$lastSync\"/" hugo.toml
       - uses: stefanzweifel/git-auto-commit-action@v5
         id: commit
         with:
           commit_message: sync city-council docs
-          file_pattern: content/city-council-docs/*
+          file_pattern: content/city-council-docs/* hugo.toml
   deploy-site:
     needs: sync-docs
     if: needs.sync-docs.outputs.changes_detected == 'true'
