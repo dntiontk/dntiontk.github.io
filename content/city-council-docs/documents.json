@@ -1,5 +1,5 @@
 {
-  "len": 712,
+  "len": 714,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/03-03/Agenda.pdf",
@@ -18,6 +18,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/03-03/ConsolidatedAgenda.pdf",
       "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-03-03T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, March 03, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/03-03/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
@@ -60,6 +74,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/02-26/ConsolidatedAgenda.pdf",
       "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-02-26T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee sitting as the Transit Windsor Board of Directors - Wednesday, February 26, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/02-26/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "ETP",
         "name": "Environment, Transportation & Public Safety Standing Committee",
@@ -3960,8 +3988,8 @@
       "rawTitle": "Special Meeting of Council - 2024 Operating & Capital Recommended Budgets - Monday, January 29, 2024"
     },
     {
-      "link": "https://www.citywindsor.ca/Documents/city-hall/City-Council-Meetings/Council%202024/01-29-2024/January%2029,%202024%20-%20City%20Council%20-%20Minutes.pdf",
-      "name": "January 29, 2024 - City Council - Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/01-29-2024/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "Special",
         "name": "Special Meeting of Council",
