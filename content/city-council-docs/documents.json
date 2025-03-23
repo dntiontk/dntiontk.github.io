@@ -1,5 +1,5 @@
 {
-  "len": 717,
+  "len": 718,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/03-26/Agenda.pdf",
@@ -28,6 +28,23 @@
       },
       "date": "2025-03-26T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, March 26, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/03-20-SPECIAL-IN-CAMERA-MEETING/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2025-03-20T00:00:00Z",
+      "rawTitle": "Special In-Camera Meeting of Council - Thursday, March 20, 2025"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/03-03/Agenda.pdf",
