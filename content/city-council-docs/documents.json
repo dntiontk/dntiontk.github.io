@@ -1,5 +1,5 @@
 {
-  "len": 729,
+  "len": 734,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/Agenda.pdf",
@@ -30,6 +30,62 @@
       "rawTitle": "City Council - Monday, April 14, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/SecondConsolidatedAgenda.pdf",
+      "name": "SecondConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-04-14T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 14, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-04-14T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 14, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/In-CameraStrikingCommitteeAgenda.pdf",
+      "name": "In-CameraStrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-04-14T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 14, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/StrikingCommitteeAgenda.pdf",
+      "name": "StrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-04-14T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 14, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/04-07/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -46,6 +102,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/04-07/Consolidated%20Agenda%20w%20Page.pdf",
       "name": "Consolidated Agenda w Page.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-04-07T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, April 07, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/04-07/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
