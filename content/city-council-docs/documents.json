@@ -1,5 +1,5 @@
 {
-  "len": 780,
+  "len": 784,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Agenda%20w%20Item%20and%20Page.pdf",
@@ -16,8 +16,36 @@
       "rawTitle": "City Council - Monday, June 09, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Consolidated%20Agenda%20w%20Item%20and%20Page.pdf",
+      "name": "Consolidated Agenda w Item and Page.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-06-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 09, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Windsor2025AMP_FINAL_AODA-Compliant.pdf",
       "name": "Windsor2025AMP_FINAL_AODA-Compliant.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-06-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 09, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -156,6 +184,20 @@
       "rawTitle": "City Council - Monday, May 26, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/05-26/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-05-26T00:00:00Z",
+      "rawTitle": "City Council - Monday, May 26, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/05-26/City%20Council%20Minutes%20updated.pdf",
       "name": "City Council Minutes updated.pdf",
       "meeting": {
@@ -273,6 +315,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/05-12/Minutes%20.pdf",
       "name": "Minutes .pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-05-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, May 12, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/05-26/City%20Council%20Minutes%20updated.pdf",
+      "name": "City Council Minutes updated.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
