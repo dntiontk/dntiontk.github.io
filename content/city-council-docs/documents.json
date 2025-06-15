@@ -1,9 +1,23 @@
 {
-  "len": 784,
+  "len": 789,
   "items": [
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Agenda%20w%20Item%20and%20Page.pdf",
-      "name": "Agenda w Item and Page.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/06-25/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-06-25T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, June 25, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Agenda.pdf",
+      "name": "Agenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -16,8 +30,8 @@
       "rawTitle": "City Council - Monday, June 09, 2025"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Consolidated%20Agenda%20w%20Item%20and%20Page.pdf",
-      "name": "Consolidated Agenda w Item and Page.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -30,8 +44,22 @@
       "rawTitle": "City Council - Monday, June 09, 2025"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Windsor2025AMP_FINAL_AODA-Compliant.pdf",
-      "name": "Windsor2025AMP_FINAL_AODA-Compliant.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-06-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 09, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Windsor2025AMP.pdf",
+      "name": "Windsor2025AMP.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -86,6 +114,20 @@
       "rawTitle": "Development & Heritage Standing Committee - Monday, June 02, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/06-02/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-06-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, June 02, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/05-28/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -114,6 +156,20 @@
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, May 28, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/05-28/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-05-28T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, May 28, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/05-28/Item8.3-Appendix2-DrainageReportDawsonDrain.pdf",
       "name": "Item8.3-Appendix2-DrainageReportDawsonDrain.pdf",
       "meeting": {
@@ -130,6 +186,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/05-28/Agenda.pdf",
       "name": "Agenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-05-28T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee sitting as the Transit Windsor Board of Directors - Wednesday, May 28, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/05-28/Minutes%20.pdf",
+      "name": "Minutes .pdf",
       "meeting": {
         "code": "ETP",
         "name": "Environment, Transportation & Public Safety Standing Committee",
