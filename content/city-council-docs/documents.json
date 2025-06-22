@@ -1,6 +1,45 @@
 {
-  "len": 789,
+  "len": 796,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/07-02/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2025-07-02T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, July 02, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/07-02/Item%208.1-S82-2025-AppendixA-WindsorUFMP-Strategy&ActionPlan.pdf",
+      "name": "Item 8.1-S82-2025-AppendixA-WindsorUFMP-Strategy&ActionPlan.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2025-07-02T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, July 02, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/07-02/Item%208.1-S82-2025-AppendixB-CityofWindsorUFMP-KeyFindings&Directions.pdf",
+      "name": "Item 8.1-S82-2025-AppendixB-CityofWindsorUFMP-KeyFindings&Directions.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2025-07-02T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, July 02, 2025"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/06-25/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -14,6 +53,37 @@
       },
       "date": "2025-06-25T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, June 25, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/06-25/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-06-25T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee sitting as the Transit Windsor Board of Directors - Wednesday, June 25, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-20-SPECIAL-IN-CAMERA-MEETING/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2025-06-20T00:00:00Z",
+      "rawTitle": "Special In-Camera Meeting of Council - Friday, June 20, 2025"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Agenda.pdf",
@@ -58,6 +128,20 @@
       "rawTitle": "City Council - Monday, June 09, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-06-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 09, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Windsor2025AMP.pdf",
       "name": "Windsor2025AMP.pdf",
       "meeting": {
@@ -74,6 +158,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/In-CameraAgenda.pdf",
       "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-06-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 09, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/06-09/Appendices.pdf",
+      "name": "Appendices.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -786,8 +884,8 @@
       "rawTitle": "City Council - Monday, April 14, 2025"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/Minutes.pdf",
-      "name": "Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/04-14/Minutes(Amended).pdf",
+      "name": "Minutes(Amended).pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -1833,8 +1931,8 @@
       "rawTitle": "City Council  - Monday, December 09, 2024"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/12-09-2024/Minutes.pdf",
-      "name": "Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/12-09-2024/Minutes_r.pdf",
+      "name": "Minutes_r.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
