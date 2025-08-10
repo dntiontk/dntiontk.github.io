@@ -1,5 +1,5 @@
 {
-  "len": 827,
+  "len": 828,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/Agenda.pdf",
@@ -18,6 +18,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
       "name": "Consolidated Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-08-05T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee  - Tuesday, August 05, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
@@ -9653,8 +9667,8 @@
       "rawTitle": "City Council - Monday, September 26, 2022"
     },
     {
-      "link": "https://www.citywindsor.ca/Documents/city-hall/City-Council-Meetings/Council%202022/September-26-2022-City-Council-Minutes.pdf",
-      "name": "September-26-2022-City-Council-Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202022/September%2026,%202022%20-%20City%20Council%20-%20Minutes.pdf",
+      "name": "September 26, 2022 - City Council - Minutes.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
