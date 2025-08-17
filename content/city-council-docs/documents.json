@@ -1,5 +1,5 @@
 {
-  "len": 828,
+  "len": 829,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/Agenda.pdf",
@@ -32,6 +32,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/FinalConsolidatedAgenda.pdf",
       "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-08-05T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee  - Tuesday, August 05, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
