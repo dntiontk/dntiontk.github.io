@@ -1,6 +1,33 @@
 {
-  "len": 829,
+  "len": 831,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/09-03/Agenda%20w%20Item%20&%20Page.pdf",
+      "name": "Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2025-09-03T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, September 03, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/09-02/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-09-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Tuesday, September 02, 2025"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/08-05/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -4852,8 +4879,8 @@
       "rawTitle": "City Council - Monday, April 22, 2024"
     },
     {
-      "link": "https://citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/Item%2011.3%20-%20Appendix%201%20-%20Retention%20and%20Employee%20Experience%20Key%20Findings.pdf",
-      "name": "Item 11.3 - Appendix 1 - Retention and Employee Experience Key Findings.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/04-22-2024/Item11.3-Appendix1-RetentionandEmployeeExperienceKeyFindings.pdf",
+      "name": "Item11.3-Appendix1-RetentionandEmployeeExperienceKeyFindings.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -4866,8 +4893,8 @@
       "rawTitle": "City Council - Monday, April 22, 2024"
     },
     {
-      "link": "https://citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/Item%2011.3%20-%20Appendix%202%20-%20Retention%20and%20Employee%20Experience%20Roadmap.pdf",
-      "name": "Item 11.3 - Appendix 2 - Retention and Employee Experience Roadmap.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/04-22-2024/Item11.3-Appendix2-RetentionandEmployeeExperienceRoadmap.pdf",
+      "name": "Item11.3-Appendix2-RetentionandEmployeeExperienceRoadmap.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
