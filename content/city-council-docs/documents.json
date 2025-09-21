@@ -1,5 +1,5 @@
 {
-  "len": 849,
+  "len": 853,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/09-24/Agenda.pdf",
@@ -32,6 +32,34 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-22/Agenda.pdf",
       "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-09-22T00:00:00Z",
+      "rawTitle": "City Council - Monday, September 22, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-22/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-09-22T00:00:00Z",
+      "rawTitle": "City Council - Monday, September 22, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-22/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -114,6 +142,20 @@
       "rawTitle": "City Council - Monday, September 08, 2025"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-08/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-09-08T00:00:00Z",
+      "rawTitle": "City Council - Monday, September 08, 2025"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-08/Item8.13-S89-2025-AppendicesD&J.pdf",
       "name": "Item8.13-S89-2025-AppendicesD&J.pdf",
       "meeting": {
@@ -158,6 +200,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-08/StrikingCommitteeAgenda.pdf",
       "name": "StrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-09-08T00:00:00Z",
+      "rawTitle": "City Council - Monday, September 08, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-08/Appendices.pdf",
+      "name": "Appendices.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
