@@ -1,6 +1,20 @@
 {
-  "len": 853,
+  "len": 855,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/10-06/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-10-06T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, October 06, 2025"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/09-24/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -46,6 +60,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-22/ConsolidatedAgenda.pdf",
       "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-09-22T00:00:00Z",
+      "rawTitle": "City Council - Monday, September 22, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/09-22/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -633,8 +661,8 @@
       "rawTitle": "City Council - Monday, July 14, 2025"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/07-14/July%2014,%202025%20-%20City%20Council%20-%20Minutes.pdf",
-      "name": "July 14, 2025 - City Council - Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/07-14/Minutes1.pdf",
+      "name": "Minutes1.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
