@@ -1,9 +1,79 @@
 {
-  "len": 861,
+  "len": 867,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/10-29/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-10-29T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee sitting as the Transit Windsor Board of Directors - Wednesday, October 29, 2025"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/10-20/Agenda.pdf",
       "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-10-20T00:00:00Z",
+      "rawTitle": "City Council - Monday, October 20, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/10-20/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-10-20T00:00:00Z",
+      "rawTitle": "City Council - Monday, October 20, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/10-20/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-10-20T00:00:00Z",
+      "rawTitle": "City Council - Monday, October 20, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/10-20/In-CameraStrikingCommitteeAgenda.pdf",
+      "name": "In-CameraStrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-10-20T00:00:00Z",
+      "rawTitle": "City Council - Monday, October 20, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/10-20/StrikingCommitteeAgenda.pdf",
+      "name": "StrikingCommitteeAgenda.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -46,6 +116,20 @@
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/10-06/FinalConsolidatedAgenda.pdf",
       "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-10-06T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, October 06, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/10-06/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
