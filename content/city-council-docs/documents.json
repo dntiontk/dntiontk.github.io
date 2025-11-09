@@ -1,5 +1,5 @@
 {
-  "len": 875,
+  "len": 880,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10/Agenda.pdf",
@@ -14,6 +14,73 @@
       },
       "date": "2025-11-10T00:00:00Z",
       "rawTitle": "City Council - Monday, November 10, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 10, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 10, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10/In-CameraAgendaStrikingCommitteeAgenda.pdf",
+      "name": "In-CameraAgendaStrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 10, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10/StrikingCommitteeAgenda.pdf",
+      "name": "StrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 10, 2025"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10-SPECIAL-MEETING-MPP/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "Unknown",
+        "name": "specialmeetingofcouncilwithmpsandmpps",
+        "SearchTerms": null
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "Special Meeting of Council with MPs and MPPs - Monday, November 10, 2025"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/11-05/Agenda.pdf",
@@ -3021,8 +3088,8 @@
       "rawTitle": "City Council  - Monday, December 09, 2024"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/12-09-2024/Minutes_r.pdf",
-      "name": "Minutes_r.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202024/12-09-2024/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -10319,8 +10386,8 @@
       "rawTitle": "City Council - Monday, September 26, 2022"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202022/September%206,%202022%20-%20City%20Council%20-%20Minutes.pdf",
-      "name": "September 6, 2022 - City Council - Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202022/September%2026,%202022%20-%20City%20Council%20-%20Minutes.pdf",
+      "name": "September 26, 2022 - City Council - Minutes.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
@@ -10431,8 +10498,8 @@
       "rawTitle": "City Council - Tuesday, September 06, 2022"
     },
     {
-      "link": "https://www.citywindsor.ca/Documents/city-hall/City-Council-Meetings/Council%202022/September-6-2022-City-Council-Minutes.pdf",
-      "name": "September-6-2022-City-Council-Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202022/September%206,%202022%20-%20City%20Council%20-%20Minutes.pdf",
+      "name": "September 6, 2022 - City Council - Minutes.pdf",
       "meeting": {
         "code": "CC",
         "name": "City Council",
