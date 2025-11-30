@@ -86,7 +86,7 @@ theme = "hugo-blog-awesome"
 
 
 [Languages.en-gb.params]
-  lastSyncDate = "2025-11-23"
+  lastSyncDate = "2025-11-30"
   sitename = "https://dntiontk.github.io"
   defaultColor = "light" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
