@@ -1,5 +1,5 @@
 {
-  "len": 896,
+  "len": 901,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/Agenda.pdf",
@@ -32,6 +32,21 @@
       "fileName": "2025_12_01-DHSC-consolidatedagenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-12-01T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, December 01, 2025",
+      "fileName": "2025_12_01-DHSC-finalconsolidatedagenda.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/11-26/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -60,6 +75,21 @@
       "date": "2025-11-26T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, November 26, 2025",
       "fileName": "2025_11_26-ETP-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/11-26/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-11-26T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, November 26, 2025",
+      "fileName": "2025_11_26-ETP-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/11-26/Agenda.pdf",
@@ -107,6 +137,21 @@
       "fileName": "2025_11_26-ETP-finalconsolidatedagenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS-TWBD/11-26/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2025-11-26T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee sitting as the Transit Windsor Board of Directors - Wednesday, November 26, 2025",
+      "fileName": "2025_11_26-ETP-minutes.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-24/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -150,6 +195,21 @@
       "date": "2025-11-24T00:00:00Z",
       "rawTitle": "City Council - Monday, November 24, 2025",
       "fileName": "2025_11_24-CC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-24/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2025-11-24T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 24, 2025",
+      "fileName": "2025_11_24-CC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-24/In-CameraAgenda.pdf",
@@ -297,6 +357,18 @@
       "date": "2025-11-10T00:00:00Z",
       "rawTitle": "Special Meeting of Council with MPs and MPPs - Monday, November 10, 2025",
       "fileName": "2025_11_10-UNKNOWN-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council%202025/11-10-SPECIAL-MEETING-MPP/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "Unknown",
+        "name": "specialmeetingofcouncilwithmpsandmpps",
+        "SearchTerms": null
+      },
+      "date": "2025-11-10T00:00:00Z",
+      "rawTitle": "Special Meeting of Council with MPs and MPPs - Monday, November 10, 2025",
+      "fileName": "2025_11_10-UNKNOWN-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/CSSC/11-05/Agenda.pdf",
