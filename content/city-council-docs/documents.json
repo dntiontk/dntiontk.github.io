@@ -1,5 +1,5 @@
 {
-  "len": 901,
+  "len": 902,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/Agenda.pdf",
@@ -45,6 +45,21 @@
       "date": "2025-12-01T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, December 01, 2025",
       "fileName": "2025_12_01-DHSC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2025-12-01T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, December 01, 2025",
+      "fileName": "2025_12_01-DHSC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/ETPS/11-26/Agenda.pdf",
