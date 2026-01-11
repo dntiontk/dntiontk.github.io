@@ -1,5 +1,5 @@
 {
-  "len": 906,
+  "len": 911,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/Agenda.pdf",
@@ -15,6 +15,66 @@
       "date": "2026-01-12T00:00:00Z",
       "rawTitle": "City Council - Monday, January 12, 2026",
       "fileName": "2026_01_12-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/FirstConsolidatedAgenda.pdf",
+      "name": "FirstConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-01-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, January 12, 2026",
+      "fileName": "2026_01_12-CC-firstconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/SecondConsolidatedAgenda.pdf",
+      "name": "SecondConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-01-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, January 12, 2026",
+      "fileName": "2026_01_12-CC-secondconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-01-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, January 12, 2026",
+      "fileName": "2026_01_12-CC-in_cameraagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/StrikingCommitteeAgenda.pdf",
+      "name": "StrikingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-01-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, January 12, 2026",
+      "fileName": "2026_01_12-CC-strikingcommitteeagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/01-07/Agenda.pdf",
@@ -59,6 +119,21 @@
       "date": "2026-01-05T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, January 05, 2026",
       "fileName": "2026_01_05-DHSC-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/01-05/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-01-05T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, January 05, 2026",
+      "fileName": "2026_01_05-DHSC-finalconsolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/Agenda.pdf",
