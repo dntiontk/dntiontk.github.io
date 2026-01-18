@@ -1,6 +1,33 @@
 {
-  "len": 911,
+  "len": 916,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/01-28/Agenda%20w%20Item%20&%20Page%20UPDATED.pdf",
+      "name": "Agenda w Item & Page UPDATED.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2026-01-28T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, January 28, 2026",
+      "fileName": "2026_01_28-ETP-agenda_w_item_page_updated.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/Agenda%20w%20Item%20and%20Page.pdf",
+      "name": "Agenda w Item and Page.pdf",
+      "meeting": {
+        "code": "Unknown",
+        "name": "specialmeetingofcouncilagenda2026proposedoperatingandcapitalbudgets",
+        "SearchTerms": null
+      },
+      "date": "2026-01-26T00:00:00Z",
+      "rawTitle": "Special Meeting of Council Agenda  2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
+      "fileName": "2026_01_26-UNKNOWN-agenda_w_item_and_page.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -77,6 +104,21 @@
       "fileName": "2026_01_12-CC-strikingcommitteeagenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-01-12T00:00:00Z",
+      "rawTitle": "City Council - Monday, January 12, 2026",
+      "fileName": "2026_01_12-CC-finalconsolidatedagenda.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/01-07/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -89,6 +131,20 @@
       "date": "2026-01-07T00:00:00Z",
       "rawTitle": "Community Services Standing Committee - Wednesday, January 07, 2026",
       "fileName": "2026_01_07-CSSC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/01-07/January%207,%202026%20-%20CSSC%20-%20Minutes.pdf",
+      "name": "January 7, 2026 - CSSC - Minutes.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2026-01-07T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, January 07, 2026",
+      "fileName": "2026_01_07-CSSC-january_7_2026_cssc_minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/01-05/Agenda.pdf",
@@ -134,6 +190,21 @@
       "date": "2026-01-05T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, January 05, 2026",
       "fileName": "2026_01_05-DHSC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/01-05/January%205,%202026%20-%20DHSC%20-%20Minutes%20(Inclusive).pdf",
+      "name": "January 5, 2026 - DHSC - Minutes (Inclusive).pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-01-05T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, January 05, 2026",
+      "fileName": "2026_01_05-DHSC-january_5_2026_dhsc_minutes_inclusive.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2025/DHSC/12-01/Agenda.pdf",
