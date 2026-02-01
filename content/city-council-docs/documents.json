@@ -1,9 +1,24 @@
 {
-  "len": 921,
+  "len": 924,
   "items": [
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/02-02/Agenda%20w%20Item%20&%20Page.pdf",
-      "name": "Agenda w Item & Page.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/02-02/Agenda.pdf",
+      "name": "Agenda.pdf",
       "meeting": {
         "code": "DHSC",
         "name": "Development & Heritage Standing Committee",
@@ -14,7 +29,22 @@
       },
       "date": "2026-02-02T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, February 02, 2026",
-      "fileName": "2026_02_02-DHSC-agenda_w_item_page.pdf"
+      "fileName": "2026_02_02-DHSC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/02-02/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-02-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, February 02, 2026",
+      "fileName": "2026_02_02-DHSC-consolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/01-28/Agenda%20w%20Item%20&%20Page%20UPDATED.pdf",
@@ -47,40 +77,73 @@
       "fileName": "2026_01_28-ETP-consolidated_agenda_w_item_page.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/01-28/January%2028,%202026%20%E2%80%93%20ETPS%20-%20Minutes.pdf",
+      "name": "January 28, 2026 – ETPS - Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2026-01-28T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, January 28, 2026",
+      "fileName": "2026_01_28-ETP-january_28_2026_etps_minutes.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/Agenda%20w%20Item%20and%20Page.pdf",
       "name": "Agenda w Item and Page.pdf",
       "meeting": {
-        "code": "Unknown",
-        "name": "specialmeetingofcouncilagenda2026proposedoperatingandcapitalbudgets",
-        "SearchTerms": null
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
       },
       "date": "2026-01-26T00:00:00Z",
-      "rawTitle": "Special Meeting of Council Agenda  2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
-      "fileName": "2026_01_26-UNKNOWN-agenda_w_item_and_page.pdf"
+      "rawTitle": "Special Meeting of Council - 2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
+      "fileName": "2026_01_26-SPECIAL-agenda_w_item_and_page.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
       "name": "Consolidated Agenda w Item & Page.pdf",
       "meeting": {
-        "code": "Unknown",
-        "name": "specialmeetingofcouncilagenda2026proposedoperatingandcapitalbudgets",
-        "SearchTerms": null
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
       },
       "date": "2026-01-26T00:00:00Z",
-      "rawTitle": "Special Meeting of Council Agenda  2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
-      "fileName": "2026_01_26-UNKNOWN-consolidated_agenda_w_item_page.pdf"
+      "rawTitle": "Special Meeting of Council - 2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
+      "fileName": "2026_01_26-SPECIAL-consolidated_agenda_w_item_page.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/In-Camera%20Agenda.pdf",
       "name": "In-Camera Agenda.pdf",
       "meeting": {
-        "code": "Unknown",
-        "name": "specialmeetingofcouncilagenda2026proposedoperatingandcapitalbudgets",
-        "SearchTerms": null
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
       },
       "date": "2026-01-26T00:00:00Z",
-      "rawTitle": "Special Meeting of Council Agenda  2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
-      "fileName": "2026_01_26-UNKNOWN-in_camera_agenda.pdf"
+      "rawTitle": "Special Meeting of Council - 2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
+      "fileName": "2026_01_26-SPECIAL-in_camera_agenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-12/Agenda.pdf",
