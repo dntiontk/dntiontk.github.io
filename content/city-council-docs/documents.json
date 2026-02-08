@@ -1,5 +1,5 @@
 {
-  "len": 924,
+  "len": 929,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/Agenda.pdf",
@@ -15,6 +15,66 @@
       "date": "2026-02-09T00:00:00Z",
       "rawTitle": "City Council - Monday, February 09, 2026",
       "fileName": "2026_02_09-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
+      "name": "Consolidated Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-in_cameraagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/In-CameraStrkingCommitteeAgenda.pdf",
+      "name": "In-CameraStrkingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-in_camerastrkingcommitteeagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/StrkingCommitteeAgenda.pdf",
+      "name": "StrkingCommitteeAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-strkingcommitteeagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/02-02/Agenda.pdf",
@@ -126,6 +186,24 @@
       "date": "2026-01-26T00:00:00Z",
       "rawTitle": "Special Meeting of Council - 2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
       "fileName": "2026_01_26-SPECIAL-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/January%2026%20-%202026%20-%20City%20Council%20-%20Minutes.pdf",
+      "name": "January 26 - 2026 - City Council - Minutes.pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2026-01-26T00:00:00Z",
+      "rawTitle": "Special Meeting of Council - 2026 Proposed Operating and Capital Budgets  - Monday, January 26, 2026",
+      "fileName": "2026_01_26-SPECIAL-january_26_2026_city_council_minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/In-Camera%20Agenda.pdf",
