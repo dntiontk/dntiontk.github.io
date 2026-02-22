@@ -1,6 +1,21 @@
 {
-  "len": 932,
+  "len": 937,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/03-02/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-03-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, March 02, 2026",
+      "fileName": "2026_03_02-DHSC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -15,6 +30,51 @@
       "date": "2026-02-23T00:00:00Z",
       "rawTitle": "City Council - Monday, February 23, 2026",
       "fileName": "2026_02_23-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
+      "name": "Consolidated Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-23T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 23, 2026",
+      "fileName": "2026_02_23-CC-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/In-Camera%20agenda%2002-23-26.pdf",
+      "name": "In-Camera agenda 02-23-26.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-23T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 23, 2026",
+      "fileName": "2026_02_23-CC-in_camera_agenda_02_23_26.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/In-Camera%20Integrity%20Commissioner%20Training%20Agenda%2002-23-26.pdf",
+      "name": "In-Camera Integrity Commissioner Training Agenda 02-23-26.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-23T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 23, 2026",
+      "fileName": "2026_02_23-CC-in_camera_integrity_commissioner_training_agenda_02_23_26.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/Agenda.pdf",
@@ -60,6 +120,21 @@
       "date": "2026-02-09T00:00:00Z",
       "rawTitle": "City Council - Monday, February 09, 2026",
       "fileName": "2026_02_09-CC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 09, 2026",
+      "fileName": "2026_02_09-CC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-09/In-CameraAgenda.pdf",
