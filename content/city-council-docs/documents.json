@@ -1,6 +1,21 @@
 {
-  "len": 937,
+  "len": 940,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/03-09/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-03-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, March 09, 2026",
+      "fileName": "2026_03_09-CC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/03-02/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -15,6 +30,21 @@
       "date": "2026-03-02T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, March 02, 2026",
       "fileName": "2026_03_02-DHSC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/03-02/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-03-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, March 02, 2026",
+      "fileName": "2026_03_02-DHSC-consolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/Agenda.pdf",
@@ -45,6 +75,21 @@
       "date": "2026-02-23T00:00:00Z",
       "rawTitle": "City Council - Monday, February 23, 2026",
       "fileName": "2026_02_23-CC-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-02-23T00:00:00Z",
+      "rawTitle": "City Council - Monday, February 23, 2026",
+      "fileName": "2026_02_23-CC-finalconsolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/02-23/In-Camera%20agenda%2002-23-26.pdf",
@@ -257,8 +302,8 @@
       "fileName": "2026_01_28-ETP-consolidated_agenda_w_item_page.pdf"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/01-28/January%2028,%202026%20%E2%80%93%20ETPS%20-%20Minutes.pdf",
-      "name": "January 28, 2026 – ETPS - Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/01-28/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "ETP",
         "name": "Environment, Transportation & Public Safety Standing Committee",
@@ -269,7 +314,7 @@
       },
       "date": "2026-01-28T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, January 28, 2026",
-      "fileName": "2026_01_28-ETP-january_28_2026_etps_minutes.pdf"
+      "fileName": "2026_01_28-ETP-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/01-26/Agenda%20w%20Item%20and%20Page.pdf",
