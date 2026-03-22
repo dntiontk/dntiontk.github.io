@@ -1,6 +1,21 @@
 {
-  "len": 948,
+  "len": 950,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/03-30/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-03-30T00:00:00Z",
+      "rawTitle": "City Council - Monday, March 30, 2026",
+      "fileName": "2026_03_30-CC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/03-25/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -15,6 +30,21 @@
       "date": "2026-03-25T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, March 25, 2026",
       "fileName": "2026_03_25-ETP-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/03-25/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2026-03-25T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, March 25, 2026",
+      "fileName": "2026_03_25-ETP-consolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/TWBD/03-25/Agenda.pdf",
