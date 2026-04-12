@@ -1,5 +1,5 @@
 {
-  "len": 961,
+  "len": 965,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-13/Agenda.pdf",
@@ -15,6 +15,51 @@
       "date": "2026-04-13T00:00:00Z",
       "rawTitle": "City Council - Monday, April 13, 2026",
       "fileName": "2026_04_13-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-13/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
+      "name": "Consolidated Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-04-13T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 13, 2026",
+      "fileName": "2026_04_13-CC-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-13/In-CameraAgenda(Session1).pdf",
+      "name": "In-CameraAgenda(Session1).pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-04-13T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 13, 2026",
+      "fileName": "2026_04_13-CC-in_cameraagenda_session1.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-13/In-CameraAgenda(Session2).pdf",
+      "name": "In-CameraAgenda(Session2).pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-04-13T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 13, 2026",
+      "fileName": "2026_04_13-CC-in_cameraagenda_session2.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/04-07/Agenda.pdf",
@@ -90,6 +135,21 @@
       "date": "2026-03-30T00:00:00Z",
       "rawTitle": "City Council - Monday, March 30, 2026",
       "fileName": "2026_03_30-CC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/03-30/Minutes%20.pdf",
+      "name": "Minutes .pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-03-30T00:00:00Z",
+      "rawTitle": "City Council - Monday, March 30, 2026",
+      "fileName": "2026_03_30-CC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/03-30/In-CameraAgenda.pdf",
