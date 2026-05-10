@@ -1,5 +1,5 @@
 {
-  "len": 984,
+  "len": 989,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/05-11/Agenda.pdf",
@@ -15,6 +15,36 @@
       "date": "2026-05-11T00:00:00Z",
       "rawTitle": "City Council - Monday, May 11, 2026",
       "fileName": "2026_05_11-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/05-11/Consolidated%20Agenda%20w%20Item%20&%20Page.pdf",
+      "name": "Consolidated Agenda w Item & Page.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-05-11T00:00:00Z",
+      "rawTitle": "City Council - Monday, May 11, 2026",
+      "fileName": "2026_05_11-CC-consolidated_agenda_w_item_page.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/05-11/In-CameraAgenda.pdf",
+      "name": "In-CameraAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-05-11T00:00:00Z",
+      "rawTitle": "City Council - Monday, May 11, 2026",
+      "fileName": "2026_05_11-CC-in_cameraagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/05-06/Agenda.pdf",
@@ -45,6 +75,20 @@
       "fileName": "2026_05_06-CSSC-consolidatedagenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/05-06/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "CSSC",
+        "name": "Community Services Standing Committee",
+        "SearchTerms": [
+          "communityservicesstandingcommittee"
+        ]
+      },
+      "date": "2026-05-06T00:00:00Z",
+      "rawTitle": "Community Services Standing Committee - Wednesday, May 06, 2026",
+      "fileName": "2026_05_06-CSSC-minutes.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/05-04/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -73,6 +117,21 @@
       "date": "2026-05-04T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, May 04, 2026",
       "fileName": "2026_05_04-DHSC-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/05-04/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-05-04T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, May 04, 2026",
+      "fileName": "2026_05_04-DHSC-finalconsolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/04-29/Agenda.pdf",
@@ -223,6 +282,21 @@
       "date": "2026-04-27T00:00:00Z",
       "rawTitle": "City Council - Monday, April 27, 2026",
       "fileName": "2026_04_27-CC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-27/Minutes%20.pdf",
+      "name": "Minutes .pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-04-27T00:00:00Z",
+      "rawTitle": "City Council - Monday, April 27, 2026",
+      "fileName": "2026_04_27-CC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/04-27/In-CameraAgenda.pdf",
@@ -1166,8 +1240,8 @@
       "fileName": "2026_01_07-CSSC-agenda.pdf"
     },
     {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/01-07/January%207,%202026%20-%20CSSC%20-%20Minutes.pdf",
-      "name": "January 7, 2026 - CSSC - Minutes.pdf",
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/CSSC/01-07/Minutes.pdf",
+      "name": "Minutes.pdf",
       "meeting": {
         "code": "CSSC",
         "name": "Community Services Standing Committee",
@@ -1177,7 +1251,7 @@
       },
       "date": "2026-01-07T00:00:00Z",
       "rawTitle": "Community Services Standing Committee - Wednesday, January 07, 2026",
-      "fileName": "2026_01_07-CSSC-january_7_2026_cssc_minutes.pdf"
+      "fileName": "2026_01_07-CSSC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/01-05/Agenda.pdf",
