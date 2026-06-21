@@ -1,6 +1,21 @@
 {
-  "len": 1018,
+  "len": 1022,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/06-29/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-06-29T00:00:00Z",
+      "rawTitle": "City Council - Monday, June 29, 2026",
+      "fileName": "2026_06_29-CC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/06-24/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -30,6 +45,42 @@
       "date": "2026-06-24T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee Sitting as the Transit Windsor Board of Directors - Wednesday, June 24, 2026",
       "fileName": "2026_06_24-ETP-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/06-17%20-%20Special%20Meeting/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2026-06-17T00:00:00Z",
+      "rawTitle": "Special Meeting of Council - Wednesday, June 17, 2026",
+      "fileName": "2026_06_17-SPECIAL-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/06-17%20-%20Special%20Meeting/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2026-06-17T00:00:00Z",
+      "rawTitle": "Special Meeting of Council - Wednesday, June 17, 2026",
+      "fileName": "2026_06_17-SPECIAL-finalconsolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/06-08/Agenda.pdf",
@@ -207,6 +258,21 @@
       "date": "2026-06-01T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, June 01, 2026",
       "fileName": "2026_06_01-DHSC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/06-01/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-06-01T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, June 01, 2026",
+      "fileName": "2026_06_01-DHSC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/06-01/Item10.1-AppendicesB&C.pdf",
