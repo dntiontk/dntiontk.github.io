@@ -1,6 +1,21 @@
 {
-  "len": 1042,
+  "len": 1047,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/08-04/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-08-04T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Tuesday, August 04, 2026",
+      "fileName": "2026_08_04-DHSC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/TWBD/07-29/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -47,6 +62,51 @@
       "fileName": "2026_07_27-CC-agenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-07-27T00:00:00Z",
+      "rawTitle": "City Council - Monday, July 27, 2026",
+      "fileName": "2026_07_27-CC-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/In-CameraAgendaSession1.pdf",
+      "name": "In-CameraAgendaSession1.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-07-27T00:00:00Z",
+      "rawTitle": "City Council - Monday, July 27, 2026",
+      "fileName": "2026_07_27-CC-in_cameraagendasession1.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/In-CameraAgendaSession2.pdf",
+      "name": "In-CameraAgendaSession2.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-07-27T00:00:00Z",
+      "rawTitle": "City Council - Monday, July 27, 2026",
+      "fileName": "2026_07_27-CC-in_cameraagendasession2.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-13/Agenda%20.pdf",
       "name": "Agenda .pdf",
       "meeting": {
@@ -75,6 +135,21 @@
       "date": "2026-07-13T00:00:00Z",
       "rawTitle": "City Council - Monday, July 13, 2026",
       "fileName": "2026_07_13-CC-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-13/Minutes%20.pdf",
+      "name": "Minutes .pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-07-13T00:00:00Z",
+      "rawTitle": "City Council - Monday, July 13, 2026",
+      "fileName": "2026_07_13-CC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-13/In-CameraAgenda.pdf",
