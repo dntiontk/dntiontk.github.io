@@ -1,5 +1,5 @@
 {
-  "len": 1047,
+  "len": 1051,
   "items": [
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/08-04/Agenda.pdf",
@@ -17,6 +17,21 @@
       "fileName": "2026_08_04-DHSC-agenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/08-04/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-08-04T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Tuesday, August 04, 2026",
+      "fileName": "2026_08_04-DHSC-consolidatedagenda.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/TWBD/07-29/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -32,6 +47,21 @@
       "fileName": "2026_07_29-ETP-agenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/TWBD/07-29/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2026-07-29T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee Sitting as the Transit Windsor Board of Directors - Wednesday, July 29, 2026",
+      "fileName": "2026_07_29-ETP-minutes.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/07-29/Agenda.pdf",
       "name": "Agenda.pdf",
       "meeting": {
@@ -45,6 +75,21 @@
       "date": "2026-07-29T00:00:00Z",
       "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, July 29, 2026",
       "fileName": "2026_07_29-ETP-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/ETPS/07-29/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "ETP",
+        "name": "Environment, Transportation & Public Safety Standing Committee",
+        "SearchTerms": [
+          "environmenttransportationpublicsafetystandingcommittee",
+          "environmenttransportationpublicsafetystandingcommitteesittingasthetransitwindsorboardofdirectors"
+        ]
+      },
+      "date": "2026-07-29T00:00:00Z",
+      "rawTitle": "Environment, Transportation & Public Safety Standing Committee - Wednesday, July 29, 2026",
+      "fileName": "2026_07_29-ETP-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/Agenda.pdf",
@@ -75,6 +120,21 @@
       "date": "2026-07-27T00:00:00Z",
       "rawTitle": "City Council - Monday, July 27, 2026",
       "fileName": "2026_07_27-CC-consolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/FinalConsolidatedAgenda.pdf",
+      "name": "FinalConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-07-27T00:00:00Z",
+      "rawTitle": "City Council - Monday, July 27, 2026",
+      "fileName": "2026_07_27-CC-finalconsolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/07-27/In-CameraAgendaSession1.pdf",
