@@ -1,6 +1,21 @@
 {
-  "len": 1052,
+  "len": 1054,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/09-01/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-09-01T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Tuesday, September 01, 2026",
+      "fileName": "2026_09_01-DHSC-agenda.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/08-04/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -45,6 +60,21 @@
       "date": "2026-08-04T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Tuesday, August 04, 2026",
       "fileName": "2026_08_04-DHSC-finalconsolidatedagenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/08-04/Minutes.pdf",
+      "name": "Minutes.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-08-04T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Tuesday, August 04, 2026",
+      "fileName": "2026_08_04-DHSC-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/TWBD/07-29/Agenda.pdf",
