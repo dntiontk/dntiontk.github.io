@@ -1,6 +1,51 @@
 {
-  "len": 1081,
+  "len": 1086,
   "items": [
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/11-09/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "CC",
+        "name": "City Council",
+        "SearchTerms": [
+          "citycouncil",
+          "citycouncilmeeting"
+        ]
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "City Council - Monday, November 09, 2026",
+      "fileName": "2026_11_09-CC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Special Meeting - Monday, November 09, 2026",
+      "fileName": "2026_11_09-DHSC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/AppendixC.pdf",
+      "name": "AppendixC.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Special Meeting - Monday, November 09, 2026",
+      "fileName": "2026_11_09-DHSC-appendixc.pdf"
+    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-02/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -15,6 +60,21 @@
       "date": "2026-11-02T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Monday, November 02, 2026",
       "fileName": "2026_11_02-DHSC-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-02/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-11-02T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Monday, November 02, 2026",
+      "fileName": "2026_11_02-DHSC-consolidatedagenda.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/10-23%20-%20Special%20Meeting/Agenda.pdf",
@@ -33,6 +93,24 @@
       "date": "2026-10-23T00:00:00Z",
       "rawTitle": "Special Meeting of Council - Friday, October 23, 2026",
       "fileName": "2026_10_23-SPECIAL-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/10-23%20-%20Special%20Meeting/Minutes%20.pdf",
+      "name": "Minutes .pdf",
+      "meeting": {
+        "code": "Special",
+        "name": "Special Meeting of Council",
+        "SearchTerms": [
+          "specialmeetingofcouncil",
+          "specialmeetingofcitycouncil",
+          "specialcitycouncilmeeting",
+          "specialincamerameetingofcouncil",
+          "specialincamerameetingofcitycouncil"
+        ]
+      },
+      "date": "2026-10-23T00:00:00Z",
+      "rawTitle": "Special Meeting of Council - Friday, October 23, 2026",
+      "fileName": "2026_10_23-SPECIAL-minutes.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/10-05/Agenda.pdf",
