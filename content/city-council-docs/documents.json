@@ -1,21 +1,6 @@
 {
-  "len": 1086,
+  "len": 1089,
   "items": [
-    {
-      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/11-09/Agenda.pdf",
-      "name": "Agenda.pdf",
-      "meeting": {
-        "code": "CC",
-        "name": "City Council",
-        "SearchTerms": [
-          "citycouncil",
-          "citycouncilmeeting"
-        ]
-      },
-      "date": "2026-11-09T00:00:00Z",
-      "rawTitle": "City Council - Monday, November 09, 2026",
-      "fileName": "2026_11_09-CC-agenda.pdf"
-    },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/Agenda.pdf",
       "name": "Agenda.pdf",
@@ -32,6 +17,21 @@
       "fileName": "2026_11_09-DHSC-agenda.pdf"
     },
     {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/ConsolidatedAgenda.pdf",
+      "name": "ConsolidatedAgenda.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Special Meeting - Monday, November 09, 2026",
+      "fileName": "2026_11_09-DHSC-consolidatedagenda.pdf"
+    },
+    {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/AppendixC.pdf",
       "name": "AppendixC.pdf",
       "meeting": {
@@ -45,6 +45,45 @@
       "date": "2026-11-09T00:00:00Z",
       "rawTitle": "Development & Heritage Standing Committee - Special Meeting - Monday, November 09, 2026",
       "fileName": "2026_11_09-DHSC-appendixc.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-09%20SPECIAL%20MEETING/Item10.1-LassalinePlanningWrittenSubmission.pdf",
+      "name": "Item10.1-LassalinePlanningWrittenSubmission.pdf",
+      "meeting": {
+        "code": "DHSC",
+        "name": "Development & Heritage Standing Committee",
+        "SearchTerms": [
+          "developmentheritagestandingcommittee",
+          "developmentheritagestandingcommitteemeeting"
+        ]
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "Development & Heritage Standing Committee - Special Meeting - Monday, November 09, 2026",
+      "fileName": "2026_11_09-DHSC-item10_1_lassalineplanningwrittensubmission.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/11-09/Agenda.pdf",
+      "name": "Agenda.pdf",
+      "meeting": {
+        "code": "Unknown",
+        "name": "citycouncilcouncil",
+        "SearchTerms": null
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "City Council Council - Monday, November 09, 2026",
+      "fileName": "2026_11_09-UNKNOWN-agenda.pdf"
+    },
+    {
+      "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Council-2026/11-09/Consolidated%20Agenda%20w%20page.pdf",
+      "name": "Consolidated Agenda w page.pdf",
+      "meeting": {
+        "code": "Unknown",
+        "name": "citycouncilcouncil",
+        "SearchTerms": null
+      },
+      "date": "2026-11-09T00:00:00Z",
+      "rawTitle": "City Council Council - Monday, November 09, 2026",
+      "fileName": "2026_11_09-UNKNOWN-consolidated_agenda_w_page.pdf"
     },
     {
       "link": "https://www.citywindsor.ca/documents/city-hall/city-council-meetings/Standing%20Committees/2026/DHSC/11-02/Agenda.pdf",
